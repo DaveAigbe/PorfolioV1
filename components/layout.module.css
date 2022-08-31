@@ -1,0 +1,50 @@
+.container {
+
+}
+
+.header {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+ }
+
+.nav__links li a:hover{
+    color:#ad6700
+}
+
+.nav__resume {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.nav__resume:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #ad6700;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+
