@@ -6,7 +6,7 @@ const Layout = ({children, home}) => {
     return (
         <section className={styles.container}>
             <header className={styles.header}>
-                <Image src={'/../public/images/my_logo.png'} height={120} width={170} alt={'Dave Aigbe Logo'}/>
+                <Image src={'/images/my_logo.png'} height={120} width={170} alt={'Dave Aigbe Logo'}/>
                 <nav>
                     <ul className={styles.nav__links}>
                         <li><a href={'#projects'}>Projects</a></li>
