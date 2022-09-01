@@ -8,14 +8,14 @@ const Projects = () => {
                 <h1>My <span className={styles.title_focus}>Projects</span></h1>
             </header>
             <section className={styles.grid}>
-                <a href="https://github.com/DaveAigbe/Yummy" target={'_blank'} className={styles.card}>
+                <a href="https://github.com/DaveAigbe/Yummy" target={'_blank'} rel={'noreferrer'} className={styles.card}>
                     <h2>Yummy! &rarr;</h2>
                 </a>
                 <p> A Recipe app that allows you to explore new delicious recipes everday!
                     Utilizes react.js and the spoonacular API.
                 </p>
 
-                <a href="https://github.com/DaveAigbe/CommandsAPI" className={styles.card}>
+                <a href="https://github.com/DaveAigbe/CommandsAPI" target={'_blank'} rel={'noreferrer'} className={styles.card}>
                     <h2>CommanderAPI &rarr;</h2>
                 </a>
                 <p>With the mass amount CLI commands to learn, it is nice to have an API that stores

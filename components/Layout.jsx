@@ -6,7 +6,7 @@ const Layout = ({children, home}) => {
     return (
         <section className={styles.container}>
             <header className={styles.header}>
-                <Image src={'/../public/images/my_logo.png'} height={120} width={170}/>
+                <Image src={'/../public/images/my_logo.png'} height={120} width={170} alt={'Dave Aigbe Logo'}/>
                 <nav>
                     <ul className={styles.nav__links}>
                         <li><a href={'#projects'}>Projects</a></li>
@@ -17,7 +17,7 @@ const Layout = ({children, home}) => {
                 </nav>
                 <a className={styles.nav__resume}
                    href={'https://docs.google.com/document/d/1apWZTYKOL4UszjU41XcSyal2X9Am7S23/edit?usp=sharing&ouid=105877498449267879603&rtpof=true&sd=true'}
-                   target={'_blank'}>Resume</a>
+                   target={'_blank'} rel={"noreferrer"}>Resume</a>
             </header>
             <main>{children}</main>
             <footer>

@@ -9,23 +9,23 @@ const About = () => {
             </header>
             <section>
                 <p>
-                    Hello! My name is Dave Aigbe and I am a computer science student and an eager programmer
-                    studying software development.
+                    {`Hello! My name is Dave Aigbe and I am a computer science student and an eager programmer
+                    studying software development.`}
                 </p>
                 <p>
-                    I'm enthusiastic about
+                    {`I'm enthusiastic about
                     the entire tech ecosystem and learning new things about software that I can create through
                     programming. I started dabbling with coding during the pandemic, but during late 2021 after
                     seeing
                     how much I could learn and build, my interest truly peaked. My curiosity currently lies in
                     fullstack development and exploring how to improve my skills with creating interactive user
                     interfaces,
-                    but also building the backend technologies that are needed for them.
+                    but also building the backend technologies that are needed for them.`}
                 </p>
                 <p>
-                    When I'm not coding I play games with friends, workout, and most importantly explore new
+                    {`When I'm not coding I play games with friends, workout, and most importantly explore new
                     food
-                    dishes and restaurants!
+                    dishes and restaurants!`}
                 </p>
             </section>
         </section>
