@@ -1,0 +1,18 @@
+.title {
+    font-size: 30px;
+}
+
+.title_focus {
+    color: #ad6700;
+}
+
+.skills_icons {
+    padding: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 25px;
+    list-style: none;
+}

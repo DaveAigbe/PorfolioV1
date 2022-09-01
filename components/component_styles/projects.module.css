@@ -1,0 +1,31 @@
+.title {
+    font-size: 30px;
+}
+
+.title_focus {
+    color: #ad6700;
+}
+
+/*Project grid*/
+.grid {
+
+}
+
+.card {
+
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: #ad6700;
+    transition: all 0.2s ease 0s;
+}
+
+.card h2 {
+
+}
+
+.card p {
+
+}

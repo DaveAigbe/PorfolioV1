@@ -1,0 +1,44 @@
+.title a {
+    color: #ad6700;
+    text-decoration: none;
+    font-size: 80px;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+    text-decoration: underline;
+}
+
+.title_statement {
+    font-size: 80px;
+    margin: 0;
+}
+
+.container {
+    display:flex;
+    height: 1200px;
+    flex-direction: column;
+
+}
+
+.content {
+    padding-top: 200px;
+}
+
+.button {
+    padding: 15px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #ad6700;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.button:hover {
+    background-color: #53a85b;
+}

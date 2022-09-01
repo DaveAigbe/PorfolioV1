@@ -1,0 +1,30 @@
+.container {
+
+}
+
+.form_container {
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.title_focus {
+    color: #ad6700;
+}
+
+.form_container input, .form_container textarea , .form_container button{
+    border-radius: 5px;
+    margin: 10px;
+    width: 50%;
+    background-color: #296377;
+    font-size: 16px;
+}
+
+.form_container input {
+    height:30px;
+}

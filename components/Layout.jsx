@@ -1,12 +1,12 @@
-import styles from './layout.module.css';
+import styles from './component_styles/layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Layout = ({children, home}) => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <header className={styles.header}>
-                <Image src={'/../public/images/my_logo.png'} height={130} width={180}/>
+                <Image src={'/../public/images/my_logo.png'} height={120} width={170}/>
                 <nav>
                     <ul className={styles.nav__links}>
                         <li><a href={'#projects'}>Projects</a></li>
@@ -15,7 +15,9 @@ const Layout = ({children, home}) => {
                         <li><a href={'#contact'}>Contact</a></li>
                     </ul>
                 </nav>
-                <a className={styles.nav__resume} href={'#resume'} id="#resume">Resume</a>
+                <a className={styles.nav__resume}
+                   href={'https://docs.google.com/document/d/1apWZTYKOL4UszjU41XcSyal2X9Am7S23/edit?usp=sharing&ouid=105877498449267879603&rtpof=true&sd=true'}
+                   target={'_blank'}>Resume</a>
             </header>
             <main>{children}</main>
             <footer>
@@ -27,7 +29,7 @@ const Layout = ({children, home}) => {
                     </div>
                 )}
             </footer>
-        </div>
+        </section>
     );
 };
 

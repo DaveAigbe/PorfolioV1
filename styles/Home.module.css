@@ -4,8 +4,13 @@
 
 /*Main(all) content*/
 .main {
-  width: 700px;
+  width: 1000px;
   margin: 0 auto;
+}
+
+.core {
+  /*height: 1200px;*/
+  margin: 0 auto 200px auto;
 }
 
 /*Footer*/
@@ -17,47 +22,9 @@
 
 }
 /*Skills */
-.skills_icons {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  gap: 5px;
-  list-style: none;
-}
 
-/*Buttons*/
-.button {
-  padding: 15px;
-  font-size: 20px;
-  margin: 5px;
-  background-color: #ad6700;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0070f3;
-}
 
 /* All titles*/
-.title a {
-  color: #ad6700;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-
-}
-
 .title_focus {
   color: #ad6700;
 }
@@ -71,27 +38,5 @@
 
 
 
-/*Project grid*/
-.grid {
-
-}
-
-.card {
-
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #ad6700;
-}
-
-.card h2 {
-
-}
-
-.card p {
-
-}
 
 
