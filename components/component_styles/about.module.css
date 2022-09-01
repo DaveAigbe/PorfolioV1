@@ -5,3 +5,7 @@
 .title_focus {
     color: #ad6700;
 }
+
+.container p {
+    font-size: 18px;
+}
