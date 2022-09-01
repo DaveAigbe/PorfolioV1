@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./component_styles/projects.module.css";
+import styles from "./component_styles/Projects.module.css";
 
 const Projects = () => {
     return (

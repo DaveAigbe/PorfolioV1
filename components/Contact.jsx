@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./component_styles/contact.module.css";
+import styles from "./component_styles/Contact.module.css";
 import {Icon} from "@iconify/react";
 
 const Contact = () => {

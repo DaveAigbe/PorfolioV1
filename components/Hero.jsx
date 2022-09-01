@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './component_styles/hero.module.css';
+import styles from './component_styles/Hero.module.css';
 
 const Hero = () => {
     return (
@@ -19,7 +19,7 @@ const Hero = () => {
                         {`I am currently a computer science student and aspiring software developer. Focusing on web technologies
                         and increasing my proficiencies in full-stack development.`}
                     </p>
-                    <a href={'#contact'} className={styles.button}>
+                    <a href={'#projects'} className={styles.button}>
                         <button className={styles.button}>Projects</button>
                     </a>
                     <a href="https://github.com/DaveAigbe" target={'_blank'} rel={'noreferrer'}>

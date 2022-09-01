@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './component_styles/skills.module.css';
+import styles from './component_styles/Skills.module.css';
 import {Icon} from "@iconify/react";
 
 const Skills = () => {
@@ -9,7 +9,7 @@ const Skills = () => {
                 <h1 className={styles.title}>My <span className={styles.title_focus}>Skills</span></h1>
             </header>
             <section>
-                <ul className={styles.skills_icons}>
+                <ul className={styles.icon_container}>
                     <li><Icon icon="vscode-icons:file-type-reactjs" width={"90"}/></li>
                     <li><Icon icon="logos:javascript" width={"90"}/></li>
                     <li><Icon icon="logos:python" width={"90"}/></li>

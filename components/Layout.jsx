@@ -1,11 +1,11 @@
-import styles from './component_styles/layout.module.css';
+import styles from './component_styles/Layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Layout = ({children, home}) => {
     return (
         <section className={styles.container}>
-            <header className={styles.header}>
+            <header className={styles.header} id={'top'}>
                 <Image src={'/images/my_logo.png'} height={120} width={170} alt={'Dave Aigbe Logo'}/>
                 <nav>
                     <ul className={styles.nav__links}>
@@ -20,7 +20,8 @@ const Layout = ({children, home}) => {
                    target={'_blank'} rel={"noreferrer"}>Resume</a>
             </header>
             <main>{children}</main>
-            <footer>
+            <footer className={styles.footer}>
+                <a href={'#top'}><Image src={'/images/my_logo.png'} height={90} width={120} /></a>
                 {!home && (
                     <div className={styles.backToHome}>
                         <Link href="/">

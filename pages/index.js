@@ -22,26 +22,27 @@ export default function Home() {
                     <Hero/>
                 </section>
 
+                <hr id={'projects'}/>
                 {/*PROJECT LIST*/}
-                <section className={styles.core} id={'projects'}>
+                <section className={styles.core}>
                     <Projects/>
                 </section>
 
-                <hr/>
+                <hr id={'skills'}/>
                 {/*SKILL LISTING*/}
-                <section className={styles.core} id={'skills'}>
+                <section className={styles.core}>
                     <Skills/>
                 </section>
 
-                <hr/>
+                <hr id={'about'}/>
                 {/*ABOUT ME*/}
-                <section className={styles.core} id={'about'}>
+                <section className={styles.core}>
                    <About/>
                 </section>
 
-                <hr/>
+                <hr id={'contact'}/>
                 {/*CONTACT BTNS & FORM*/}
-                <section className={styles.core} id={'contact'}>
+                <section className={styles.core}>
                     <Contact/>
                     <section>
                         <EmailForm />

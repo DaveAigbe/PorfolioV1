@@ -3,7 +3,7 @@
 }
 
 .title_focus {
-    color: #ad6700;
+    color: #EC8E0FFF;
 }
 
 .icon_container {
@@ -11,4 +11,9 @@
     justify-content: center;
     align-items: center;
     gap: 150px;
+}
+
+.icon_container a:hover {
+    transform: translateY(-20%);
+    transition: 0.2s;
 }

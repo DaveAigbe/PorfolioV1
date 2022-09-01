@@ -3,10 +3,10 @@
 }
 
 .title_focus {
-    color: #ad6700;
+    color: #EC8E0FFF;
 }
 
-.skills_icons {
+.icon_container {
     padding: 0;
     display:flex;
     flex-wrap: wrap;
@@ -15,4 +15,11 @@
     align-content: flex-start;
     gap: 25px;
     list-style: none;
+}
+
+.icon_container li:hover {
+    transform: scale(1.40);
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+
 }

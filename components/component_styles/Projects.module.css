@@ -3,7 +3,7 @@
 }
 
 .title_focus {
-    color: #ad6700;
+    color: #EC8E0FFF;
 }
 
 /*Project grid*/
@@ -18,7 +18,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-    color: #ad6700;
+    color: #EC8E0FFF;
     transition: all 0.2s ease 0s;
 }
 
