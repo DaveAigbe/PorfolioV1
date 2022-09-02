@@ -1,11 +1,19 @@
-.title a {
+.content header h3 {
+    padding-left: 4px;
+}
+
+.content section {
+    padding-left: 4px;
+}
+
+.title_name a {
     color: #EC8E0FFF;
     font-size: 85px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.title_name a:hover,
+.title_name a:focus,
+.title_name a:active {
     transition: all 0.3s ease-in-out;
     text-decoration: underline 1px solid #c97b0e;
     background-size: cover;
