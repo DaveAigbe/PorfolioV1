@@ -14,6 +14,6 @@
 }
 
 .icon_container a:hover {
-    transform: translateY(-20%);
-    transition: 0.2s;
+    transform: translateY(-25%);
+    transition: all 250ms ease-in-out;
 }
