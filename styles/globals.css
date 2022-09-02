@@ -34,3 +34,14 @@ a {
     background: #0046ad;
   }
 }
+
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: #ffffff;
+    background: #0046ad;
+  }
+}
