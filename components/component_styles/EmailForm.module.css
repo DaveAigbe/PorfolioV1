@@ -20,8 +20,8 @@
     color: #EC8E0FFF;
 }
 
-.form_container input, .form_container textarea , .form_container button{
-    border-radius: 10px;
+.form_container input, .form_container textarea{
+    border-radius: 5px;
     padding: 8px;
     margin: 10px;
     width: 50%;
@@ -32,6 +32,19 @@
 .form_container input:focus, .form_container textarea:focus{
     outline: none;
     caret-color: #EC8E0FFF;
+}
+
+.form_container button {
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    background-color: #296377;
+    font-size: 16px;
+    width: 25%;
+}
+
+.form_container textarea {
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 .form_container input {

@@ -1,13 +1,21 @@
 .title a {
     color: #EC8E0FFF;
-    text-decoration: none;
-    font-size: 80px;
+    font-size: 85px;
 }
 
 .title a:hover,
 .title a:focus,
 .title a:active {
-    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline 1px solid #c97b0e;
+    background-size: cover;
+    background: url("https://media.giphy.com/media/t2aAdTgnU9Ie6jvG0W/giphy-downsized-large.gif") center;
+    -webkit-background-clip: text;
+    color: rgba(255, 185, 59, 0.28);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .title_statement {
