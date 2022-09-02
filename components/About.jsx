@@ -17,7 +17,7 @@ const About = () => {
                     the entire tech ecosystem and learning new things about software that I can create through
                     programming. I started dabbling with coding during the pandemic, but during late 2021 after
                     seeing
-                    how much I could learn and build, my interest truly peaked. My curiosity currently lies in
+                    how much I could learn and build, my interest truly piqued. My curiosity currently lies in
                     fullstack development and exploring how to improve my skills with creating interactive user
                     interfaces,
                     but also building the backend technologies that are needed for them.`}
