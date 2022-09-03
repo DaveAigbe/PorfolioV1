@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Layout = ({children, home}) => {
     return (
-        <section className={styles.container}>
+        <section>
             <header className={styles.header} id={'top'}>
                 <Image className={styles.logo} src={'/images/my_logo.png'} height={120} width={170} alt={'Dave Aigbe Logo'}/>
                 <nav>

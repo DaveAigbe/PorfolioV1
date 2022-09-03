@@ -1,39 +1,26 @@
-.container {
-
-}
-
 .header {
-    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    left: 0 !important;
-    top: 0 !important;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
-    border-radius: 0 0 10px 10px;
-}
-
-.header a {
     font-size: 20px;
     font-weight: bold;
 }
 
+
 .nav__links {
     list-style: none;
+    display: flex;
+    align-items: center;
+    padding-right: 120px;
 }
 
 .nav__links li {
-    display: inline-block;
     padding: 0 10px;
 }
 
-.nav__links li a {
-    transition: all 0.3s ease 0s;
- }
 
 .nav__links li a:hover{
+    transition: all 0.3s ease 0s;
     color:#EC8E0FFF
 }
 
