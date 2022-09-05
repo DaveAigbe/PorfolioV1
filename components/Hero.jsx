@@ -19,7 +19,7 @@ const Hero = () => {
                         {`I am currently a computer science student and aspiring software developer. Focusing on web technologies
                         and increasing my proficiencies in full-stack development.`}
                     </p>
-                    <a href={'#projects'} >
+                    <a href={'#projects'}>
                         <button className={styles.button}>Projects</button>
                     </a>
                     <a href={'https://github.com/DaveAigbe'} target={'_blank'} rel={'noreferrer'}>

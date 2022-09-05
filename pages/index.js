@@ -1,12 +1,12 @@
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
-import Layout from "../components/Layout";
-import EmailForm from "../components/EmailForm";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Skills from "../components/Skills";
+import Layout from '../components/Layout';
+import EmailForm from '../components/EmailForm';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Skills from '../components/Skills';
 
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
                 <hr className={styles.divider} id={'about'}/>
                 {/*ABOUT ME*/}
                 <section className={styles.core}>
-                   <About/>
+                    <About/>
                 </section>
 
                 <hr className={styles.divider} id={'contact'}/>
@@ -46,7 +46,7 @@ export default function Home() {
                 <section className={styles.core}>
                     <Contact/>
                     <section>
-                        <EmailForm />
+                        <EmailForm/>
                     </section>
                 </section>
             </main>

@@ -1,51 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
 @import url('https://fonts.googleapis.com/css?family=Open Sans');
 
-html{
-  font-size: 62.5%;
-  box-sizing: border-box;
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Helvetica Neue", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: #ffffff;
-    background: #0046ad;
-  }
+    html {
+        color-scheme: dark;
+    }
+
+    body {
+        color: #ffffff;
+        background: #0046ad;
+    }
 }
 
 
 @media (prefers-color-scheme: light) {
-  html {
-    color-scheme: light;
-  }
-  body {
-    color: #ffffff;
-    background: #0046ad;
-  }
+    html {
+        color-scheme: light;
+    }
+
+    body {
+        color: #ffffff;
+        background: #0046ad;
+    }
 }

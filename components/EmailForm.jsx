@@ -1,11 +1,11 @@
-import { useForm, ValidationError } from '@formspree/react';
-import styles from './component_styles/EmailForm.module.css'
+import {useForm, ValidationError} from '@formspree/react';
+import styles from './component_styles/EmailForm.module.css';
 
 function ContactForm() {
-    const [state, handleSubmit] = useForm("xrgdbwly");
+    const [state, handleSubmit] = useForm('xrgdbwly');
 
     if (state.succeeded) {
-        alert('message successfully sent')
+        alert('message successfully sent');
     }
 
     return (
@@ -50,9 +50,11 @@ function ContactForm() {
 
     );
 }
+
 function App() {
     return (
-        <ContactForm />
+        <ContactForm/>
     );
 }
+
 export default App;

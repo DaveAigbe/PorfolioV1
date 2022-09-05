@@ -24,9 +24,9 @@
 }
 
 
-.nav__links li a:hover{
+.nav__links li a:hover {
     transition: all 0.3s ease 0s;
-    color:#EC8E0FFF
+    color: #EC8E0FFF
 }
 
 .nav__resume {
@@ -42,7 +42,7 @@
 }
 
 .footer {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

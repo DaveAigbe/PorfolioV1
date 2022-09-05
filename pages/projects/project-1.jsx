@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from "next/link";
-import Head from "next/head";
-import Layout from "../../components/Layout";
+import Link from 'next/link';
+import Head from 'next/head';
+import Layout from '../../components/Layout';
 
 const ProjectOne = () => {
     return (
@@ -11,7 +11,7 @@ const ProjectOne = () => {
             </Head>
             <h1>Testing routing</h1>
             <button>
-                <Link href='/'>Return to home page.</Link>
+                <Link href="/">Return to home page.</Link>
             </button>
         </Layout>
     );
