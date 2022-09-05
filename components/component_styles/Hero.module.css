@@ -27,7 +27,7 @@
 }
 
 .title_statement {
-    font-size: 80px;
+    font-size: 8rem;
     margin: 0;
 }
 
@@ -45,7 +45,7 @@
 .button {
     padding: 15px;
     width: 150px;
-    font-size: 20px;
+    font-size: 2rem;
     background-color: #EC8E0FFF;
     border-radius: 5px;
     border: none;
@@ -61,6 +61,6 @@
 
 .description {
     margin-bottom: 30px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
