@@ -9,7 +9,7 @@ const Hero = () => {
                     {/*<Image src={'/images/profile.jpg'} height={198} width={257} alt={'dave'} className={styles.profile}/>*/}
                     <h3>Hi, my name is</h3>
                     <h2 className={styles.title_name}>
-                        <a href="https://www.linkedin.com/in/dave-a-aa262a235/" target={'_blank'} rel={'noreferrer'}>Dave
+                        <a href="https://www.linkedin.com/in/daveaigbejr/" target={'_blank'} rel={'noreferrer'}>Dave
                             Aigbe.</a>
                     </h2>
                     <h1 className={styles.title_statement}>I enjoy building things for the web.</h1>
@@ -22,7 +22,7 @@ const Hero = () => {
                     <a href={'#projects'} >
                         <button className={styles.button}>Projects</button>
                     </a>
-                    <a href={'https://www.linkedin.com/in/daveaigbejr/'} target={'_blank'} rel={'noreferrer'}>
+                    <a href={'https://github.com/DaveAigbe'} target={'_blank'} rel={'noreferrer'}>
                         <button className={styles.button}>Github</button>
                     </a>
                 </section>
