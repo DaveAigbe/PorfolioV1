@@ -22,7 +22,7 @@ const Hero = () => {
                     <a href={'#projects'} >
                         <button className={styles.button}>Projects</button>
                     </a>
-                    <a href={"https://github.com/DaveAigbe"} target={'_blank'} rel={'noreferrer'}>
+                    <a href={'https://www.linkedin.com/in/daveaigbejr/'} target={'_blank'} rel={'noreferrer'}>
                         <button className={styles.button}>Github</button>
                     </a>
                 </section>
