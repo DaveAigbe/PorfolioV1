@@ -18,36 +18,26 @@ export default function Home() {
                 <link rel="icon" href="/logoicon.ico"/>
             </Head>
             <main className={styles.container}>
-                {/*HERO*/}
-                <section className={styles.first}>
+                <section className={styles.core}>
+                    {/*HERO*/}
                     <Hero/>
-                </section>
 
-                <hr className={styles.divider} id={'projects'}/>
-                {/*PROJECT LIST*/}
-                <section className={styles.core}>
+                    <hr className={styles.divider} id={'projects'}/>
+                    {/*PROJECT LIST*/}
                     <Projects/>
-                </section>
 
-                <hr className={styles.divider} id={'skills'}/>
-                {/*SKILL LISTING*/}
-                <section className={styles.core}>
+                    <hr className={styles.divider} id={'skills'}/>
+                    {/*SKILL LISTING*/}
                     <Skills/>
-                </section>
 
-                <hr className={styles.divider} id={'about'}/>
-                {/*ABOUT ME*/}
-                <section className={styles.core}>
+                    <hr className={styles.divider} id={'about'}/>
+                    {/*ABOUT ME*/}
                     <About/>
-                </section>
 
-                <hr className={styles.divider} id={'contact'}/>
-                {/*CONTACT BTNS & FORM*/}
-                <section className={styles.core}>
+                    <hr className={styles.divider} id={'contact'}/>
+                    {/*CONTACT BTNS & FORM*/}
                     <Contact/>
-                    <section>
-                        <EmailForm/>
-                    </section>
+                    <EmailForm/>
                 </section>
             </main>
         </Layout>

@@ -3,7 +3,7 @@ import styles from './component_styles/Projects.module.css';
 
 const Projects = () => {
     return (
-        <section>
+        <section className={styles.container}>
             <header className={styles.title}>
                 <h1>My <span className={styles.title_focus}>Projects</span></h1>
             </header>

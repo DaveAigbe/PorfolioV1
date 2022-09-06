@@ -4,9 +4,9 @@ import {Icon} from '@iconify/react';
 
 const Skills = () => {
     return (
-        <section>
-            <header>
-                <h1 className={styles.title}>My <span className={styles.title_focus}>Skills</span></h1>
+        <section className={styles.container}>
+            <header className={styles.title}>
+                <h1>My <span className={styles.title_focus}>Skills</span></h1>
             </header>
             <section>
                 <ul className={styles.icon_container}>

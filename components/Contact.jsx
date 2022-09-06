@@ -5,8 +5,8 @@ import {Icon} from '@iconify/react';
 const Contact = () => {
     return (
         <section>
-            <header>
-                <h1 className={styles.title}>Contact <span className={styles.title_focus}>Me</span></h1>
+            <header className={styles.title}>
+                <h1>Contact <span className={styles.title_focus}>Me</span></h1>
             </header>
             <section className={styles.icon_container}>
                 <a href={'mailto:dave.aigbe@outlook.com'} rel={'noreferrer'}><Icon icon="clarity:email-solid" width="90"

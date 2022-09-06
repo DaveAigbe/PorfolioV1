@@ -1,5 +1,5 @@
 .container {
-
+    margin: 0 auto 20rem;
 }
 
 .form_container {
@@ -12,7 +12,7 @@
     background-color: #014fbe;
 }
 
-.title {
+.title h1{
     font-size: 3rem;
 }
 

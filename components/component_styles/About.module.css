@@ -1,11 +1,15 @@
-.title {
+.container {
+    margin: 0 auto 20rem;
+}
+
+.container p {
+    font-size: 1.8rem;
+}
+
+.title h1{
     font-size: 3rem;
 }
 
 .title_focus {
     color: #EC8E0FFF;
-}
-
-.container p {
-    font-size: 1.8rem;
 }

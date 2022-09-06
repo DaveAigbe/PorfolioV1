@@ -1,4 +1,9 @@
-.title {
+.container {
+    margin: 0 auto 20rem;
+}
+
+
+.title h1{
     font-size: 3rem;
 }
 

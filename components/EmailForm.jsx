@@ -10,8 +10,8 @@ function ContactForm() {
 
     return (
         <section className={styles.container}>
-            <header>
-                <h1 className={styles.title}>Email <span className={styles.title_focus}>Me</span></h1>
+            <header className={styles.title}>
+                <h1>Email <span className={styles.title_focus}>Me</span></h1>
             </header>
             <form className={styles.form_container} onSubmit={handleSubmit}>
                 <input
