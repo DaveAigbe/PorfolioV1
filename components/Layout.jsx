@@ -2,10 +2,23 @@ import styles from './component_styles/Layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
+// let prevScrollPos = window.scrollY;
+// window.onscroll = function() {
+//     let currentScrollPos = window.scrollY;
+//     if (prevScrollPos > currentScrollPos) {
+//         document.querySelector("header").style.top = "0";
+//     } else {
+//         document.querySelector("header").style.top = "-120px";
+//     }
+//     prevScrollPos = currentScrollPos;
+// }
+//
+
 const Layout = ({children, home}) => {
     return (
         <section>
-            <header className={styles.header} id={'top'}>
+            <div id="top"></div>
+            <header className={styles.header}>
                 <Image className={styles.logo} src={'/images/my_logo-nobg.png'} height={120} width={170} alt={'Dave Aigbe Logo'}/>
                 <nav>
                     <ul className={styles.nav__links}>

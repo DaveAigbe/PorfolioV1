@@ -7,9 +7,15 @@ import Projects from '../components/Projects';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Skills from '../components/Skills';
+import * as contentful from 'contentful';
 
 
-export default function Home() {
+const client = contentful.createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+});
+
+export default function Home({projects}) {
     return (
         <Layout home>
             <Head>
@@ -24,7 +30,7 @@ export default function Home() {
 
                     <hr className={styles.divider} id={'projects'}/>
                     {/*PROJECT LIST*/}
-                    <Projects/>
+                    <Projects projectsObj={projects}/>
 
                     <hr className={styles.divider} id={'skills'}/>
                     {/*SKILL LISTING*/}
@@ -42,4 +48,16 @@ export default function Home() {
             </main>
         </Layout>
     );
+}
+
+export async function getStaticProps() {
+    // Get data from headless cms
+    const product = await client.getEntry('2Gtu58YRArEBlEVMHIFZid');
+    console.log(product.fields.allprojects)
+
+    return {
+        props: {
+            projects: product.fields.allprojects,
+        },
+    };
 }
