@@ -34,7 +34,7 @@ const Layout = ({children, home}) => {
             </header>
             <main>{children}</main>
             <footer className={styles.footer}>
-                <a href={'#top'}><Image src={'/images/my_logo.png'} height={90} width={120}/></a>
+                <a href={'#top'}><Image src={'/images/my_logo.png'} height={90} width={120} alt={'Dave Aigbe Logo'}/></a>
                 {!home && (
                     <div className={styles.backToHome}>
                         <Link href="/">
