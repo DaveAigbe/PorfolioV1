@@ -14,6 +14,7 @@ const client = contentful.createClient({
     accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
 });
 
+
 export default function Home({hero, projects, skills, about, contact}) {
     return (
         <Layout home>
@@ -51,16 +52,15 @@ export default function Home({hero, projects, skills, about, contact}) {
 
 export async function getStaticProps() {
     // Get data from headless cms
-    // const hero = await client.getEntry('')
+    const hero = await client.getEntry('6unY6sx06cuqsJztkA9wJi');
     const projects = await client.getEntry('2Gtu58YRArEBlEVMHIFZid');
     const skills = await client.getEntry('6oKHCE7i2h5sC0LlPgKrrk');
     const about =  await client.getEntry('7H1t2GalPLV5sWPEsLBGAs');
     const contact = await client.getEntry('736safyd7Ju5dGYqcdaJnO');
-    console.log()
 
     return {
         props: {
-            hero: 'hello world!',
+            hero: hero.fields,
             projects: projects.fields.allprojects,
             skills: skills.fields.icons,
             about: about.fields.description,
