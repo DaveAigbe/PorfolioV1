@@ -9,13 +9,12 @@ import Contact from '../components/Contact';
 import Skills from '../components/Skills';
 import * as contentful from 'contentful';
 
-
 const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
 });
 
-export default function Home({projects}) {
+export default function Home({hero, projects, skills, about, contact}) {
     return (
         <Layout home>
             <Head>
@@ -26,7 +25,7 @@ export default function Home({projects}) {
             <main className={styles.container}>
                 <section className={styles.core}>
                     {/*HERO*/}
-                    <Hero/>
+                    <Hero heroObj={hero}/>
 
                     <hr className={styles.divider} id={'projects'}/>
                     {/*PROJECT LIST*/}
@@ -34,15 +33,15 @@ export default function Home({projects}) {
 
                     <hr className={styles.divider} id={'skills'}/>
                     {/*SKILL LISTING*/}
-                    <Skills/>
+                    <Skills skillsObj={skills}/>
 
                     <hr className={styles.divider} id={'about'}/>
                     {/*ABOUT ME*/}
-                    <About/>
+                    <About aboutObj={about}/>
 
                     <hr className={styles.divider} id={'contact'}/>
                     {/*CONTACT BTNS & FORM*/}
-                    <Contact/>
+                    <Contact contactObj={contact}/>
                     <EmailForm/>
                 </section>
             </main>
@@ -52,12 +51,20 @@ export default function Home({projects}) {
 
 export async function getStaticProps() {
     // Get data from headless cms
-    const product = await client.getEntry('2Gtu58YRArEBlEVMHIFZid');
-    console.log(product.fields.allprojects)
+    const hero = await client.getEntry('')
+    const projects = await client.getEntry('2Gtu58YRArEBlEVMHIFZid');
+    const skills = await client.getEntry('6oKHCE7i2h5sC0LlPgKrrk');
+    const about =  await client.getEntry('7H1t2GalPLV5sWPEsLBGAs');
+    const contact = await client.getEntry('736safyd7Ju5dGYqcdaJnO');
+    console.log()
 
     return {
         props: {
-            projects: product.fields.allprojects,
+            hero: 'hello world!',
+            projects: projects.fields.allprojects,
+            skills: skills.fields.icons,
+            about: about.fields.description,
+            contact: contact.fields.information
         },
     };
 }

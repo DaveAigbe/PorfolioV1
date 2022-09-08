@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './component_styles/Projects.module.css';
 
-const Projects = () => {
+const Projects = ({projectsObj}) => {
     return (
         <section className={styles.container}>
             <header className={styles.title}>
