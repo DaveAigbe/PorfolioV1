@@ -51,7 +51,7 @@ export default function Home({hero, projects, skills, about, contact}) {
 
 export async function getStaticProps() {
     // Get data from headless cms
-    const hero = await client.getEntry('')
+    // const hero = await client.getEntry('')
     const projects = await client.getEntry('2Gtu58YRArEBlEVMHIFZid');
     const skills = await client.getEntry('6oKHCE7i2h5sC0LlPgKrrk');
     const about =  await client.getEntry('7H1t2GalPLV5sWPEsLBGAs');
