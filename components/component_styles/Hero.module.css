@@ -58,6 +58,7 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     margin-right: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 
 }
 

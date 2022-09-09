@@ -1,38 +1,46 @@
 .navbar {
+    /*Styling*/
+    box-sizing: border-box;
+    background-color: #0046ad;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: top 0.3s;
+    opacity: 95%;
+    padding: 20px 20px 15px 20px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    /*Positioning*/
+    position: fixed;
+    top: 0;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 0 60px;
 }
-
-.logo {
-    margin: 0;
-}
-
 
 .nav__links {
+    /*Styling*/
+    margin: 0;
+    padding: 0;
     list-style: none;
+    /*Positioning*/
     display: flex;
-    align-items: center;
-    padding-right: 120px;
+    justify-content: center;
+    gap: 15px;
 }
 
-.nav__links li {
-    padding: 0 10px;
+.nav__links a {
+    text-decoration: none;
 }
 
-
-.nav__links li a:hover {
+.nav__links a:hover {
     transition: all 0.3s ease 0s;
     color: #EC8E0FFF
 }
 
 .nav__resume {
-    padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .nav__resume:hover {
