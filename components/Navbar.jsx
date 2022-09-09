@@ -2,7 +2,8 @@ import styles from './component_styles/Navbar.module.css';
 import Image from 'next/image';
 import {useEffect} from 'react';
 
-const Navbar = ({navObj}) => {
+const Navbar = ({logoUrl, navObj}) => {
+    const logo = `https:${logoUrl}`
 
     useEffect(() => {
         let prevScrollPos = window.scrollY;
@@ -20,7 +21,7 @@ const Navbar = ({navObj}) => {
     return (
         <header>
             <nav className={styles.navbar} id={'navbar'}>
-                <Image src={`http:${navObj.logo.fields.file.url}`} height={60} width={120} alt={'Dave Aigbe Logo'}/>
+                <Image src={logo} height={60} width={120} alt={'Dave Aigbe Logo'}/>
                 <ul className={styles.nav__links}>
                     {navObj.navigationList.map((item) => {
                             return (
