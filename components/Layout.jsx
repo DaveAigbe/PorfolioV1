@@ -7,7 +7,7 @@ const Layout = ({logoUrl, navObj ,children, home}) => {
             <div id="top"></div>
             <Navbar navObj={navObj} logoUrl={logoUrl}/>
             <main>{children}</main>
-            <Footer homePage={home}/>
+            <Footer logoUrl={logoUrl} homePage={home}/>
         </section>
     );
 };
