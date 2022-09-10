@@ -53,7 +53,7 @@ export default function Home({logo, navBar, hero, projects, skills, about, conta
 export async function getStaticProps() {
     // Get data from headless cms
     const logo = await client.getEntry('2Wc3ck93e9dz1Yxpp2GR0e')
-    const navBar = await client.getEntry('2Vt814gn7s0flyfJzeKHoQ');
+    const navBar = await client.getEntry('43dOPbWS6mSfo3fiFM4dZO');
     const hero = await client.getEntry('6unY6sx06cuqsJztkA9wJi');
     const projects = await client.getEntry('2Gtu58YRArEBlEVMHIFZid');
     const skills = await client.getEntry('6oKHCE7i2h5sC0LlPgKrrk');

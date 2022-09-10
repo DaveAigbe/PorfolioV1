@@ -4,6 +4,7 @@ import {useEffect} from 'react';
 
 const Navbar = ({logoUrl, navObj}) => {
     const logo = `https:${logoUrl}`
+    const navList = navObj.navList
 
     useEffect(() => {
         let prevScrollPos = window.scrollY;
@@ -23,7 +24,7 @@ const Navbar = ({logoUrl, navObj}) => {
             <nav className={styles.navbar} id={'navbar'}>
                 <Image src={logo} height={60} width={120} alt={'Dave Aigbe Logo'}/>
                 <ul className={styles.nav__links}>
-                    {navObj.navigationList.map((item) => {
+                    {navList.map((item) => {
                             return (
                                 <li key={item.id}>
                                     <a href={item.link}>{item.title}</a>
