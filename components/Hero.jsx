@@ -3,7 +3,7 @@ import styles from './component_styles/Hero.module.css';
 
 const Hero = ({heroObj}) => {
     return (
-        <section className={styles.container}>
+        <section>
             <div className={styles.content}>
                 <header>
                     {/*<Image src={'/images/profile.jpg'} height={198} width={257} alt={'dave'} className={styles.profile}/>*/}
