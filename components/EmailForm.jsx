@@ -4,6 +4,7 @@ import styles from './component_styles/EmailForm.module.css';
 function ContactForm() {
     const [state, handleSubmit] = useForm('xrgdbwly');
 
+    // Swap out for lottie animation
     if (state.succeeded) {
         alert('message successfully sent');
     }
