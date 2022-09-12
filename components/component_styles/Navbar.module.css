@@ -1,3 +1,6 @@
+
+/* || Content */
+
 .navbar {
     /*Styling*/
     box-sizing: border-box;
@@ -17,6 +20,8 @@
     align-items: center;
 }
 
+/* || Page Links */
+
 .nav__links {
     /*Styling*/
     margin: 0;
@@ -28,23 +33,25 @@
     gap: 15px;
 }
 
-.nav__links a {
+.link {
     text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
 
-.nav__links a:hover {
-    transition: all 0.3s ease 0s;
+.link:hover {
     color: #EC8E0FFF
 }
 
+/* || Resume Link */
+
 .nav__resume {
+    transition: all 0.3s ease 0s;
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
 }
 
 .nav__resume:hover {
-    transition: all 0.3s ease 0s;
     color: #EC8E0FFF;
     border-color: #EC8E0FFF;
 }

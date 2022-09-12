@@ -4,10 +4,10 @@ import styles from './component_styles/About.module.css';
 const About = ({aboutObj}) => {
     return (
         <section className={styles.container}>
-            <header className={styles.title}>
-                <h1>About <span className={styles.title_focus}>Me</span></h1>
+            <header>
+                <h1 className={styles.title}>About <span className={styles.title_focus}>Me</span></h1>
             </header>
-            <section>
+            <section className={styles.description}>
                 {aboutObj.map((paragraph) => {
                         return (
                             <div key={paragraph.id}>

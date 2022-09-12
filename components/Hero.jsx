@@ -7,7 +7,7 @@ const Hero = ({heroObj}) => {
             <div className={styles.content}>
                 <header>
                     {/*<Image src={'/images/profile.jpg'} height={198} width={257} alt={'dave'} className={styles.profile}/>*/}
-                    <h3>{heroObj.introduction.greet}</h3>
+                    <h3 className={styles.title_greet}>{heroObj.introduction.greet}</h3>
                     <h2 className={styles.title_name}>
                         <a href={heroObj.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>
                             {heroObj.introduction.name}
@@ -21,12 +21,14 @@ const Hero = ({heroObj}) => {
                     <p className={styles.description}>
                         {heroObj.description.content[0].content[0].value}
                     </p>
-                    <a href={heroObj.links.projects.link}>
-                        <button className={styles.button}>{heroObj.links.projects.title}</button>
-                    </a>
-                    <a href={heroObj.links.github.link} target={'_blank'} rel={'noreferrer'}>
-                        <button className={styles.button}>{heroObj.links.github.title}</button>
-                    </a>
+                    <div className={styles.buttons}>
+                        <a href={heroObj.links.projects.link}>
+                            <button className={styles.button}>{heroObj.links.projects.title}</button>
+                        </a>
+                        <a href={heroObj.links.github.link} target={'_blank'} rel={'noreferrer'}>
+                            <button className={styles.button}>{heroObj.links.github.title}</button>
+                        </a>
+                    </div>
                 </section>
             </div>
         </section>

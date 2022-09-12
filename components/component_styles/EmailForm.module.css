@@ -1,19 +1,13 @@
+
+/* || Container */
+
 .container {
-    margin: 0 auto 20rem;
+    margin: 0 auto 10rem;
 }
 
-.form_container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 100px;
-    border: 3px solid #0044a9;
-    border-radius: 10px;
-    background-color: #014fbe;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-}
+/* || Title */
 
-.title h1{
+.title {
     font-size: 3rem;
 }
 
@@ -21,7 +15,22 @@
     color: #EC8E0FFF;
 }
 
-.form_container input, .form_container textarea {
+/* || Form Container */
+
+.form_container {
+    background-color: #014fbe;
+    border: 3px solid #0044a9;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* || Fields */
+
+.name, .email, .message {
     border-radius: 5px;
     padding: 8px;
     margin: 10px;
@@ -30,35 +39,35 @@
     font-size: 1.6rem;
 }
 
-.form_container input:focus, .form_container textarea:focus {
+.name:focus, .email:focus, .message:focus {
     outline: none;
-    caret-color: #EC8E0FFF;
+    caret-color: #ab8f87;
 }
 
-.form_container button {
-    border-radius: 5px;
-    padding: 8px;
-    margin: 10px;
-    background-color: #296377;
-    font-size: 1.6rem;
-    width: 25%;
-}
-
-.form_container textarea {
-    font-family: "Helvetica Neue", sans-serif;
-}
-
-.form_container input {
+.name, .email {
     height: 30px;
 }
 
-.form_container textarea {
+.message {
+    font-family: "Helvetica Neue", sans-serif;
     resize: none;
 }
 
-.form_container button:hover {
-    background-color: #EC8E0FFF;
+/* || Button */
+
+.button {
+    width: 25%;
+    background-color: #296377;
+    font-size: 1.6rem;
     transition: all 400ms ease-in-out;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+}
+
+
+.button:hover {
+    background-color: #ab8f87;
     cursor: pointer;
 }
 

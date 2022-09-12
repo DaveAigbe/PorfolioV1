@@ -1,10 +1,15 @@
-.title h1 {
+
+/* || Title */
+
+.title {
     font-size: 3rem;
 }
 
 .title_focus {
     color: #EC8E0FFF;
 }
+
+/* || Icons */
 
 .icon_container {
     display: flex;
@@ -13,7 +18,10 @@
     gap: 150px;
 }
 
-.icon_container a:hover {
-    transform: translateY(-25%);
+.icon {
     transition: all 250ms ease-in-out;
+}
+
+.icon:hover {
+    transform: translateY(-25%);
 }

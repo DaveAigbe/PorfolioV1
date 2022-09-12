@@ -1,8 +1,13 @@
+
+/* || Content */
+
 .container {
     margin: 0 auto 20rem;
 }
 
-.title h1{
+/* || Title */
+
+.title{
     font-size: 3rem;
 }
 
@@ -10,26 +15,30 @@
     color: #EC8E0FFF;
 }
 
-/*Project grid*/
-.grid {
+/* || Cards Grid */
+
+.cards_grid {
 
 }
+
+/* || Card */
 
 .card {
 
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-    color: #EC8E0FFF;
+.card_title {
     transition: all 0.2s ease 0s;
 }
 
-.card h2 {
-
+.card_title:hover {
+    color: #bda59d;
 }
 
-.card p {
+.arrow {
+    color: #EC8E0FFF;
+}
+
+.card_description {
 
 }

@@ -4,17 +4,19 @@ import styles from './component_styles/Projects.module.css';
 const Projects = ({projectsObj}) => {
     return (
         <section className={styles.container}>
-            <header className={styles.title}>
-                <h1>My <span className={styles.title_focus}>Projects</span></h1>
+            <header>
+                <h1 className={styles.title}>My <span className={styles.title_focus}>Projects</span></h1>
             </header>
-            <section className={styles.grid}>
+            <section className={styles.cards_grid}>
                 {projectsObj.map((project) => {
                         return (
-                            <div key={project.id}>
-                                <a href={project.link} target={'_blank'} rel={'noreferrer'} className={styles.card}>
-                                    <h2>{project.title} &rarr;</h2>
+                            <div key={project.id} className={styles.card}>
+                                <a href={project.link} target={'_blank'} rel={'noreferrer'}>
+                                    <h2 className={styles.card_title}>
+                                        {project.title} <span className={styles.arrow}>&rarr;</span>
+                                    </h2>
                                 </a>
-                                <p>
+                                <p className={styles.card_description}>
                                     {project.description}
                                 </p>
                             </div>

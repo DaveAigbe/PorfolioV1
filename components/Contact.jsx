@@ -5,19 +5,19 @@ import {Icon} from '@iconify/react';
 const Contact = ({contactObj}) => {
     return (
         <section>
-            <header className={styles.title}>
-                <h1>Contact <span className={styles.title_focus}>Me</span></h1>
+            <header>
+                <h1 className={styles.title}>Contact <span className={styles.title_focus}>Me</span></h1>
             </header>
             <section className={styles.icon_container}>
                 {contactObj.map((contact) => {
                         return (
                             <React.Fragment key={contact.id}>
                                 {contact.title === 'email' ? (
-                                    <a href={contact.link} rel={'noreferrer'}>
+                                    <a className={styles.icon} href={contact.link} rel={'noreferrer'}>
                                         <Icon icon={contact.icon} width="90" inline={true}/>
                                     </a>
                                 ) : (
-                                    <a href={contact.link} target={'_blank'} rel={'noreferrer'}>
+                                    <a  className={styles.icon} href={contact.link} target={'_blank'} rel={'noreferrer'}>
                                         <Icon icon={contact.icon} width="90" inline={true}/>
                                     </a>
                                 )}

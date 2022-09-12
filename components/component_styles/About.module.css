@@ -1,15 +1,23 @@
+
+/* || Content */
+
 .container {
     margin: 0 auto 20rem;
 }
 
-.container p {
-    font-size: 1.8rem;
-}
+/* || Title */
 
-.title h1{
+.title{
     font-size: 3rem;
 }
 
 .title_focus {
     color: #EC8E0FFF;
 }
+
+/* || Description */
+
+.description {
+    font-size: 1.8rem;
+}
+

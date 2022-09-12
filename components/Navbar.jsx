@@ -27,7 +27,7 @@ const Navbar = ({logoUrl, navObj}) => {
                     {navList.map((item) => {
                             return (
                                 <li key={item.id}>
-                                    <a href={item.link}>{item.title}</a>
+                                    <a className={styles.link} href={item.link}>{item.title}</a>
                                 </li>
                             );
                         }

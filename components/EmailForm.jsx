@@ -10,8 +10,8 @@ function ContactForm() {
 
     return (
         <section className={styles.container}>
-            <header className={styles.title}>
-                <h1>Email <span className={styles.title_focus}>Me</span></h1>
+            <header>
+                <h1 className={styles.title}>Email <span className={styles.title_focus}>Me</span></h1>
             </header>
             <form className={styles.form_container} onSubmit={handleSubmit}>
                 <input
@@ -19,12 +19,14 @@ function ContactForm() {
                     type="text"
                     name="name"
                     placeholder="Name"
+                    className={styles.name}
                 />
                 <input
                     id="email"
                     type="email"
                     name="email"
                     placeholder="Email Address"
+                    className={styles.email}
                 />
                 <ValidationError
                     prefix="Email"
@@ -36,13 +38,14 @@ function ContactForm() {
                     name="message"
                     rows={7}
                     placeholder="Message"
+                    className={styles.message}
                 />
                 <ValidationError
                     prefix="Message"
                     field="message"
                     errors={state.errors}
                 />
-                <button type="submit" disabled={state.submitting}>
+                <button className={styles.button} type="submit" disabled={state.submitting}>
                     Send
                 </button>
             </form>
@@ -51,10 +54,5 @@ function ContactForm() {
     );
 }
 
-function App() {
-    return (
-        <ContactForm/>
-    );
-}
 
-export default App;
+export default ContactForm;

@@ -33,7 +33,7 @@ export default function Home({logo, navBar, hero, projects, skills, about, conta
                     <Projects projectsObj={projects}/>
 
                     <hr className={styles.divider} id={'skills'}/>
-                    {/*SKILL LISTING*/}
+                    {/*SKILL LIST*/}
                     <Skills skillsObj={skills}/>
 
                     <hr className={styles.divider} id={'about'}/>
@@ -41,7 +41,7 @@ export default function Home({logo, navBar, hero, projects, skills, about, conta
                     <About aboutObj={about}/>
 
                     <hr className={styles.divider} id={'contact'}/>
-                    {/*CONTACT BTNS & FORM*/}
+                    {/*CONTACT BUTTONS & EMAIL FORM*/}
                     <Contact contactObj={contact}/>
                     <EmailForm/>
                 </section>

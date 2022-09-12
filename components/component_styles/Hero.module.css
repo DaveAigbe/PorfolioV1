@@ -1,33 +1,41 @@
+
+/* || Content */
+
 .content {
-    height: 130rem;
+    height: 100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.content header h3 {
-    padding-left: 4px;
-}
-
 .content section {
     padding-left: 4px;
 }
 
+/* || Title Greeting  */
+
+.title_greet {
+    padding-left: 4px;
+}
+
+/* || Title Name  */
+
 .title_name a {
     color: #EC8E0FFF;
-    font-size: 85px;
+    font-size: 8.5rem;
+    margin: 20px 0;
 }
 
 .title_name a:hover,
 .title_name a:focus,
 .title_name a:active {
+    color: rgba(255, 185, 59, 0.28);
     transition: all 0.3s ease-in-out;
     text-decoration: underline 1px solid #c97b0e;
     background-size: cover;
     background: url("https://media.giphy.com/media/t2aAdTgnU9Ie6jvG0W/giphy-downsized-large.gif") center;
     -webkit-background-clip: text;
-    color: rgba(255, 185, 59, 0.28);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -39,26 +47,36 @@
     margin: 0;
 }
 
+/* || Title Statement */
+
 .description {
+    /*color: #e1bdb2;*/
     margin-bottom: 30px;
     font-size: 1.6rem;
     font-weight: bold;
 }
 
+/* || Buttons */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
 .button {
-    padding: 15px;
-    width: 150px;
     font-size: 2rem;
     background-color: #EC8E0FFF;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    margin-right: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    transition: all 400ms ease-in-out;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
 
 }
 
 .button:hover {
-    background-color: #296377;
+    /*background-color: #b69787;*/
+    background-color: #ab8f87;
 }

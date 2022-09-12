@@ -1,9 +1,13 @@
+
+/* || Content */
+
 .container {
     margin: 0 auto 20rem;
 }
 
+/* || Title */
 
-.title h1{
+.title{
     font-size: 3rem;
 }
 
@@ -11,20 +15,23 @@
     color: #EC8E0FFF;
 }
 
+/* || Icons */
+
 .icon_container {
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;
+    flex-wrap: wrap;
     gap: 25px;
     list-style: none;
 }
 
-.icon_container li:hover {
-    transform: scale(1.40);
+.icon {
     transition: all 400ms ease-in-out;
     cursor: pointer;
+}
 
+.icon:hover {
+    transform: scale(1.40);
 }
