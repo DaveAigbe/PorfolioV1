@@ -1,8 +1,8 @@
-import styles from './component_styles/Navbar.module.css';
+import styles from './component_styles/Header.module.css';
 import Image from 'next/image';
 import {useEffect} from 'react';
 
-const Navbar = ({logoUrl, navObj}) => {
+const Header = ({logoUrl, navObj}) => {
     const logo = `https:${logoUrl}`
     const navList = navObj.navList
 
@@ -41,4 +41,4 @@ const Navbar = ({logoUrl, navObj}) => {
     );
 };
 
-export default Navbar;
+export default Header;
