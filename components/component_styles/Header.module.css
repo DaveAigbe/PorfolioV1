@@ -52,6 +52,5 @@
 }
 
 .nav__resume:hover {
-    color: #EC8E0FFF;
-    border-color: #EC8E0FFF;
+    background-color: #c97b0e;
 }
