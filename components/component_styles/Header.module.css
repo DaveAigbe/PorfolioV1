@@ -118,4 +118,8 @@
     .image_container {
         width: 90px;
     }
+
+    .nav__links {
+        gap: 35px;
+    }
 }
