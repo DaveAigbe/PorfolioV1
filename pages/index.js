@@ -21,6 +21,7 @@ export default function Home({logo, navBar, hero, projects, skills, about, conta
             <Head>
                 <title>Dave Aigbe | CS Student</title>
                 <meta name="description" content="Personal Portfolio"/>
+                <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
                 <link rel="icon" href="/logoicon.ico"/>
             </Head>
             <main className={styles.container}>

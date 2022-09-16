@@ -1,4 +1,3 @@
-
 /* || Content */
 
 .navbar {
@@ -10,7 +9,7 @@
     transition: top 0.3s;
     opacity: 95%;
     padding: 20px 20px 15px 20px;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
     /*Positioning*/
     position: fixed;
     top: 0;
@@ -18,6 +17,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* || Logo */
+
+.image_container {
+    display: block;
+    width: 120px;
 }
 
 /* || Page Links */
@@ -53,4 +59,63 @@
 
 .nav__resume:hover {
     background-color: #c97b0e;
+}
+
+/* || Menu */
+
+.menu__button {
+    display: none;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__links {
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #003483;
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* || Queries */
+
+@media only screen and (max-width: 640px) {
+    .nav__resume, .nav__links {
+        display: none;
+    }
+
+    .navbar {
+        position: static;
+        padding: 14px 14px 10px 14px;
+    }
+
+    .menu__button {
+        display: block;
+        width: 90px;
+    }
+
+    .menu__icon {
+        width: 80px;
+    }
+
+    .image_container {
+        width: 100px;
+
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+    .navbar {
+        font-size: 1.6rem;
+    }
+
+    .image_container {
+        width: 90px;
+    }
 }
