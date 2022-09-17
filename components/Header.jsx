@@ -5,11 +5,14 @@ import {Icon} from '@iconify/react';
 
 const menuClick = () => {
     const menu_links = document.getElementById('menu__links');
+    // const navBar = document.getElementById('navbar')
 
     if (menu_links.style.display === 'none') {
         menu_links.style.display = 'flex';
+        // navBar.style.boxShadow = '2px 4px 16px rgb(0, 0, 0)'
     } else {
         menu_links.style.display = 'none';
+        // navBar.style.boxShadow = '2px 4px 16px rgb(0, 0, 0.2)'
     }
 };
 

@@ -88,7 +88,7 @@
     .content {
         margin: 0 clamp(15px, 10vw, 70px);
         justify-content: flex-start;
-        padding-top: 120px;
+        padding-top: 100px;
     }
 
     .title_greet, .button {
