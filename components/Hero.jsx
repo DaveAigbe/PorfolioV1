@@ -6,7 +6,6 @@ const Hero = ({heroObj}) => {
         <section>
             <div className={styles.content}>
                 <header>
-                    {/*<Image src={'/images/profile.jpg'} height={198} width={257} alt={'dave'} className={styles.profile}/>*/}
                     <h3 className={styles.title_greet}>{heroObj.introduction.greet}</h3>
                     <h2 className={styles.title_name}>
                         <a href={heroObj.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>

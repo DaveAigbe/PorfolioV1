@@ -46,13 +46,15 @@ const Header = ({logoUrl, navObj}) => {
     }
 
     useEffect(() => {
+        const navbar = document.getElementById('navbar')
         let prevScrollPos = window.scrollY;
+
         window.onscroll = function () {
             let currentScrollPos = window.scrollY;
             if (prevScrollPos > currentScrollPos) {
-                document.getElementById('navbar').style.top = '0';
+                navbar.style.top = '0';
             } else {
-                document.getElementById('navbar').style.top = '-100px';
+                navbar.style.top = '-100px';
             }
             prevScrollPos = currentScrollPos;
         };
