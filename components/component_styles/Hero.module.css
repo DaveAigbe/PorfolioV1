@@ -13,13 +13,12 @@
     padding-left: 4px;
 }
 
-/* || Title Greeting  */
+/* || Title Name  */
 
 .title_greet {
+    font-size: 2rem;
     padding-left: 4px;
 }
-
-/* || Title Name  */
 
 .title_name a {
     color: #EC8E0FFF;
@@ -76,7 +75,35 @@
 
 }
 
-.button:hover {
+.button:hover, .button:active {
     /*background-color: #b69787;*/
     background-color: #ab8f87;
+}
+
+/* || Queries */
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        margin: 0 clamp(15px, 10vw, 70px);
+    }
+
+    .title_greet, .button {
+        font-size: clamp(1.5rem, 2vw , 2rem);
+    }
+
+    .title_name a{
+        font-size: clamp(5rem, 8vw, 8.5rem);
+    }
+
+    .title_statement {
+        font-size: clamp(4rem, 8vw, 8rem);
+    }
+
+    .description {
+        font-size: clamp(1.5rem, 2vw, 1.6rem);
+    }
+
+    .button {
+        width: clamp(120px, 2vw, 150px)
+    }
 }
