@@ -66,6 +66,7 @@
 
 .button {
     font-size: 2rem;
+    color: white;
     background-color: #EC8E0FFF;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     transition: all 400ms ease-in-out;
@@ -105,7 +106,6 @@
 
     .description {
         font-size: clamp(1.3rem, 2vw, 1.6rem);
-        font-weight: 900;
     }
 
     .button {
