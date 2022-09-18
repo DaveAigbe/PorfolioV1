@@ -21,3 +21,19 @@
     font-size: 1.8rem;
 }
 
+/* || Queries */
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 clamp(15px, 10vw, 70px) 20rem;
+    }
+
+    .title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .description {
+        font-size: clamp(1.6rem, 5vw, 1.8rem);
+    }
+}
+
