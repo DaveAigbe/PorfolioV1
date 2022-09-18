@@ -4,7 +4,7 @@ import {Icon} from '@iconify/react';
 
 const Contact = ({contactObj}) => {
     return (
-        <section>
+        <section className={styles.container}>
             <header>
                 <h1 className={styles.title}>Contact <span className={styles.title_focus}>Me</span></h1>
             </header>
@@ -13,12 +13,12 @@ const Contact = ({contactObj}) => {
                         return (
                             <React.Fragment key={contact.id}>
                                 {contact.title === 'email' ? (
-                                    <a className={styles.icon} href={contact.link} rel={'noreferrer'}>
-                                        <Icon icon={contact.icon} width="90" inline={true}/>
+                                    <a className={styles.icon_link} href={contact.link} rel={'noreferrer'}>
+                                        <Icon className={styles.icon} icon={contact.icon} width={'90'} inline={true}/>
                                     </a>
                                 ) : (
-                                    <a  className={styles.icon} href={contact.link} target={'_blank'} rel={'noreferrer'}>
-                                        <Icon icon={contact.icon} width="90" inline={true}/>
+                                    <a  className={styles.icon_link} href={contact.link} target={'_blank'} rel={'noreferrer'}>
+                                        <Icon className={styles.icon} icon={contact.icon} width={'90'} inline={true}/>
                                     </a>
                                 )}
                             </React.Fragment>

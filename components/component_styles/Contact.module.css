@@ -1,4 +1,11 @@
 
+/* || Content */
+
+.container {
+
+}
+
+
 /* || Title */
 
 .title {
@@ -15,13 +22,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 150px;
 }
 
-.icon {
+.icon_link {
     transition: all 250ms ease-in-out;
 }
 
-.icon:hover {
+.icon_link:hover {
     transform: translateY(-25%);
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 clamp(15px, 10vw, 70px);
+    }
+
+    .icon_container {
+        gap: clamp(50px, 10vw, 150px)
+    }
+
+    .icon {
+        width: clamp(70px, 8vw, 90px)
+    }
 }
