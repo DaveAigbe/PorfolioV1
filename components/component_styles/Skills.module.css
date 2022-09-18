@@ -35,3 +35,19 @@
 .icon:hover {
     transform: scale(1.40);
 }
+
+/* || Queries */
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 clamp(15px, 10vw, 70px) 20rem;
+    }
+
+    .title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .icon {
+        width: clamp(80px, 8vw, 90px)
+    }
+}
