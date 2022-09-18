@@ -98,7 +98,7 @@
     }
 
     .navbar {
-        height: 118px;
+        height: 80px;
         padding: 14px 14px 10px 14px;
         position: static;
     }
@@ -106,15 +106,18 @@
     .menu__button {
         display: block;
         width: 90px;
+        /* To improve */
+        position: relative;
+        height: 80px;
+        top: -8px;
     }
 
     .menu__icon {
-        width: 80px;
+        width: 60px;
     }
 
     .image_container {
-        width: 100px;
-
+        width: 80px;
     }
 }
 
