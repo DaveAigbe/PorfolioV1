@@ -87,15 +87,17 @@ const Header = ({logoUrl, navObj}) => {
                 </button>
             </nav>
             <ul className={styles.menu__links} id={'menu__links'} style={{display: 'none'}}>
-                <li><a href={'#projects'}>Projects</a><hr/></li>
-                <li><a href={'#skills'}>Skills</a><hr/></li>
-                <li><a href={'#about'}>About</a><hr/></li>
-                <li><a href={'#contact'}>Contact</a><hr/></li>
+                {navList.map((item) => {
+                        return (
+                            <li key={item.id}>
+                                <a href={item.link}>{item.title}</a><hr/>
+                            </li>
+                        );
+                    }
+                )}
                 <li>
-                    <a
-                        href={'https://docs.google.com/document/d/1apWZTYKOL4UszjU41XcSyal2X9Am7S23/edit?usp=sharing&ouid=105877498449267879603&rtpof=true&sd=true'}
-                        target={'_blank'} rel={'noreferrer'}>
-                        Resume
+                    <a href={navObj.resume.link} target={'_blank'} rel={'noreferrer'}>
+                        {navObj.resume.title}
                     </a>
                     <hr/>
                 </li>

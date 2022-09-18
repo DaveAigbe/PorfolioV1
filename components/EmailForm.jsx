@@ -6,7 +6,10 @@ function ContactForm() {
 
     // Swap out for lottie animation
     if (state.succeeded) {
-        alert('message successfully sent');
+        alert('Message successfully sent!');
+        document.getElementById('name').value = ''
+        document.getElementById('email').value = ''
+        document.getElementById('message').value = ''
     }
 
     return (
