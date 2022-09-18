@@ -2,7 +2,8 @@
 /* || Container */
 
 .container {
-    margin: 0 auto 10rem;
+    /* Change to px */
+    margin: 0 auto 100px;
 }
 
 /* || Title */
@@ -71,3 +72,21 @@
     cursor: pointer;
 }
 
+/* || Queries */
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 clamp(15px, 10vw, 70px);
+    }
+
+    .form_container {
+        margin: 0 clamp(0px, 2vw, 100px) 100px;
+    }
+
+    .name, .email, .message {
+        padding: clamp(4px, 1vw, 8px);
+        margin: 10px;
+        font-size: clamp(1.2rem, 2vw, 1.6rem);
+    }
+
+}
