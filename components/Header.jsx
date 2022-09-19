@@ -5,7 +5,7 @@ import {Icon} from '@iconify/react';
 
 const menuClick = () => {
     const menu_links = document.getElementById('menu__links');
-    // const navBar = document.getElementById('navbar')
+    const navBar = document.getElementById('navbar');
 
     if (menu_links.style.display === 'none') {
         menu_links.style.display = 'flex';
@@ -32,7 +32,6 @@ const MenuIcon = ({toggle}) => {
         </>
     );
 };
-
 
 const Header = ({logoUrl, navObj}) => {
     const [active, setActive] = useState(false);
