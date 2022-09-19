@@ -89,8 +89,8 @@
     .content {
         margin: 0 clamp(15px, 10vw, 70px);
         justify-content: flex-start;
-        padding-top: 40px;
-        height: calc(100vh - 120px);
+        padding-top: 30px;
+        height: calc(100vh - 110px);
     }
 
     .title_greet, .button {
