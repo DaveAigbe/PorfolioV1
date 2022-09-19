@@ -1,0 +1,43 @@
+/* || Content */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+/* || Title */
+
+.title{
+    font-size: 3rem;
+}
+
+.title_focus {
+    color: #EC8E0FFF;
+}
+
+
+/* || Link Container */
+
+.link_container {
+    display: block;
+    width: clamp(310px, 80vw, 700px);
+    border-radius: 10px;
+    box-shadow: 20px 20px 16px rgb(0, 0, 0);
+}
+
+.image {
+    border-radius: 10px;
+}
+
+/* || Queries */
+
+@media (max-width: 500px) {
+    .container {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+}

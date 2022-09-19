@@ -78,7 +78,7 @@ const Header = ({logoUrl, navObj}) => {
                         }
                     )}
                 </ul>
-                <a className={styles.nav__resume} href={navObj.resume.link} target={'_blank'} rel={'noreferrer'}>
+                <a className={styles.nav__resume} href={navObj.resume.link} rel={'noreferrer'}>
                     {navObj.resume.title}
                 </a>
                 <button onClick={() => {menuClick(); changeMenu()}} className={styles.menu__button}>

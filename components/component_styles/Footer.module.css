@@ -1,3 +1,5 @@
+/* || Content */
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,23 @@
     padding-bottom: 20px;
 }
 
+/* || Home page button */
+
 .backToHome {
     margin: 3rem 0 0;
 }
+
+/* || Animation */
+
+/*.logo {*/
+/*    animation: logo-spin 1s linear infinite;*/
+/*}*/
+
+/*@keyframes logo-spin {*/
+/*    from {*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    to {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
