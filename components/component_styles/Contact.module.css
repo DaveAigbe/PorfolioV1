@@ -1,10 +1,8 @@
-
 /* || Content */
 
 .container {
 
 }
-
 
 /* || Title */
 
@@ -33,6 +31,8 @@
 .icon_link:hover {
     transform: translateY(-25%);
 }
+
+/* || Queries */
 
 @media (max-width: 1000px) {
     .container {

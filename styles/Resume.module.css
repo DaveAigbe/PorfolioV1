@@ -3,6 +3,15 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* || Main Content */
+.main {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 30px;
@@ -23,10 +32,15 @@
 
 .link_container {
     display: block;
-    width: clamp(310px, 80vw, 700px);
-    border-radius: 10px;
     box-shadow: 20px 20px 16px rgb(0, 0, 0);
     background-color: rgb(0,0,0);
+    width: clamp(310px, 80vw, 700px);
+    border-radius: 10px;
+    transition: all 250ms ease-in-out;
+}
+
+.link_container:hover {
+    transform: translateY(-1.5%) translateX(-1.5%);
 }
 
 .image {

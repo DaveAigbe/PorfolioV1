@@ -9,17 +9,16 @@ const Footer = ({logoUrl, homePage}) => {
     return (
         <div>
             <footer className={styles.footer}>
-                {/*<Icon icon="ant-design:arrow-up-outlined" color="#eee" width={"30"} inline={false} className={styles.arrow}/>*/}
-                <a className={styles.logo} href={'#top'}><Image src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/></a>
                 {!homePage
                     &&
                     (
-                        <div className={styles.backToHome}>
+                        <div className={styles.home_container}>
                             <Link href="/">
-                                <a>← Back to home</a>
+                                <a>← Home</a>
                             </Link>
                         </div>
                     )}
+                <a href={'#top'}><Image src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/></a>
             </footer>
         </div>
     );

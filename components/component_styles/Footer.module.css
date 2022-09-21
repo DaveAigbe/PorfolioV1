@@ -10,8 +10,19 @@
 
 /* || Home page button */
 
-.backToHome {
-    margin: 3rem 0 0;
+.home_container {
+    margin-bottom: 55px;
+    margin-right: 12px;
+}
+
+.home_container a {
+    transition: all 0.3s ease-in-out;
+}
+
+.home_container a:hover {
+    font-size: 2rem;
+    color: #c97b0e;
+    font-weight: bold;
 }
 
 /* || Animation */

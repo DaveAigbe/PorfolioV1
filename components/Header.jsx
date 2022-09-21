@@ -2,6 +2,7 @@ import styles from './component_styles/Header.module.css';
 import Image from 'next/image';
 import {useEffect, useState} from 'react';
 import {Icon} from '@iconify/react';
+import Link from 'next/link';
 
 const menuClick = () => {
     const menu_links = document.getElementById('menu__links');
@@ -21,12 +22,12 @@ const MenuIcon = ({toggle}) => {
         <>
             {toggle === false ?
                 (
-                    <Icon className={styles.menu__icon} icon="line-md:menu" color="white" width={90} />
+                    <Icon className={styles.menu__icon} icon="line-md:menu" color="white" width={90}/>
                     // <Icon className={styles.menu__icon} icon="ci:menu-alt-01" color="white" width={90}/>
                 )
                 :
                 (
-                    <Icon className={styles.menu__icon} icon="cil:x" color="white" width="90" />
+                    <Icon className={styles.menu__icon} icon="cil:x" color="white" width="90"/>
                 )
             }
         </>
@@ -41,14 +42,14 @@ const Header = ({logoUrl, navObj}) => {
 
     const changeMenu = () => {
         if (!active) {
-            setActive(true)
+            setActive(true);
         } else {
-            setActive(false)
+            setActive(false);
         }
-    }
+    };
 
     useEffect(() => {
-        const navbar = document.getElementById('navbar')
+        const navbar = document.getElementById('navbar');
         let prevScrollPos = window.scrollY;
 
         window.onscroll = function () {
@@ -78,10 +79,15 @@ const Header = ({logoUrl, navObj}) => {
                         }
                     )}
                 </ul>
-                <a className={styles.nav__resume} href={navObj.resume.link} rel={'noreferrer'}>
-                    {navObj.resume.title}
-                </a>
-                <button onClick={() => {menuClick(); changeMenu()}} className={styles.menu__button}>
+                <div className={styles.nav__resume}>
+                    <Link href={{pathname: navObj.resume.link, query: {logoUrl, navList}}}>
+                        {navObj.resume.title}
+                    </Link>
+                </div>
+                <button onClick={() => {
+                    menuClick();
+                    changeMenu();
+                }} className={styles.menu__button}>
                     <MenuIcon toggle={active}/>
                 </button>
             </nav>
@@ -89,15 +95,16 @@ const Header = ({logoUrl, navObj}) => {
                 {navList.map((item) => {
                         return (
                             <li key={item.id}>
-                                <a href={item.link}>{item.title}</a><hr/>
+                                <a href={item.link}>{item.title}</a>
+                                <hr/>
                             </li>
                         );
                     }
                 )}
                 <li>
-                    <a href={navObj.resume.link} target={'_blank'} rel={'noreferrer'}>
+                    <Link href={{pathname: navObj.resume.link, query: {logoUrl, navList}}}>
                         {navObj.resume.title}
-                    </a>
+                    </Link>
                     <hr/>
                 </li>
             </ul>
