@@ -8,7 +8,7 @@ This is my first iteration of my portfolio built in Next.JS with the Contentful 
 
 ## Live Website
 
-- [https://daveaigbe.live](www.daveaigbe.live)
+- [https://www.daveaigbe.live/](https://www.daveaigbe.live/)
 
 ## Future Plans
 
