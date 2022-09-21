@@ -1,0 +1,20 @@
+/* || Content */
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+}
+
+/* || Board */
+
+.board {
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 16px rgb(0, 0, 0);
+}
+

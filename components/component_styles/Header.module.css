@@ -48,16 +48,22 @@
     color: #EC8E0FFF
 }
 
-/* || Resume Link */
+/* || Nav Buttons */
 
-.nav__resume {
+.nav__button__container {
+    display: flex;
+    gap: 4px;
+}
+
+
+.nav__button {
     transition: all 0.3s ease 0s;
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
 }
 
-.nav__resume:hover {
+.nav__button:hover {
     background-color: #c97b0e;
 }
 
@@ -93,7 +99,7 @@
 /* || Queries */
 
 @media only screen and (max-width: 640px) {
-    .nav__resume, .nav__links {
+    .nav__button, .nav__links {
         display: none;
     }
 

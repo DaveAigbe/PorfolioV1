@@ -83,11 +83,18 @@ const Header = () => {
                         }
                     )}
                 </ul>
-                <div className={styles.nav__resume}>
-                    <Link href={resumeData.link}>
-                        {resumeData.title}
-                    </Link>
-                </div>
+                <section className={styles.nav__button__container} >
+                    <div className={styles.nav__button}>
+                        <Link href={resumeData.link}>
+                            {resumeData.title}
+                        </Link>
+                    </div>
+                    <div className={styles.nav__button}>
+                        <Link href={'/board'}>
+                            Scrum Board
+                        </Link>
+                    </div>
+                </section>
                 <button onClick={() => {
                     menuClick();
                     changeMenu();
@@ -108,6 +115,12 @@ const Header = () => {
                 <li>
                     <Link href={resumeData.link}>
                         {resumeData.title}
+                    </Link>
+                    <hr/>
+                </li>
+                <li>
+                    <Link href={'/board'}>
+                        Scrum Board
                     </Link>
                     <hr/>
                 </li>
