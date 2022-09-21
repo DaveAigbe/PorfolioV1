@@ -26,6 +26,7 @@
     width: clamp(310px, 80vw, 700px);
     border-radius: 10px;
     box-shadow: 20px 20px 16px rgb(0, 0, 0);
+    background-color: rgb(0,0,0);
 }
 
 .image {
@@ -37,7 +38,6 @@
 @media (max-width: 500px) {
     .container {
         height: 100vh;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
     }
 }
