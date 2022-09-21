@@ -5,7 +5,7 @@ import {Context} from './context/Context';
 const Hero = () => {
     const [context] = useContext(Context);
 
-    const heroData = context.hero
+    const heroData = context.hero;
 
     return (
         <section>
