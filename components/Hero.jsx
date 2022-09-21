@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import styles from './component_styles/Hero.module.css';
-import {Context} from '../pages/context/Context';
+import {Context} from './context/Context';
 
 const Hero = () => {
     const [context] = useContext(Context);

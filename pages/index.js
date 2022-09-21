@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 import Skills from '../components/Skills';
 import * as contentful from 'contentful';
 import {useState} from 'react';
-import {Context} from './context/Context';
+import {Context} from '../components/context/Context';
 
 const client = contentful.createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,

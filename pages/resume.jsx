@@ -9,7 +9,7 @@ const client = contentful.createClient({
     accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
 });
 
-const Resume = ({data}) => {
+export default function Resume({data}) {
     const resumeUrl = data.resume.img.fields['file']['url'];
     const resumeImg = `https:${resumeUrl}`;
 
@@ -46,4 +46,4 @@ export async function getStaticProps() {
     };
 }
 
-export default Resume;
+

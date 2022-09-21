@@ -3,7 +3,7 @@ import Image from 'next/image';
 import {useContext, useEffect, useState} from 'react';
 import {Icon} from '@iconify/react';
 import Link from 'next/link';
-import {Context} from '../pages/context/Context';
+import {Context} from './context/Context';
 
 
 const menuClick = () => {

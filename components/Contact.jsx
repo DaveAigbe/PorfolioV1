@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import styles from './component_styles/Contact.module.css';
 import {Icon} from '@iconify/react';
-import {Context} from '../pages/context/Context';
+import {Context} from './context/Context';
 
 const Contact = () => {
     const [context] = useContext(Context);
