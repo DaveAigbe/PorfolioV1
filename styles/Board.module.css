@@ -18,3 +18,11 @@
     box-shadow: 20px 20px 16px rgb(0, 0, 0);
 }
 
+/* || Queries */
+
+@media (max-width: 600px) {
+    .board {
+        width: 90%;
+    }
+}
+
