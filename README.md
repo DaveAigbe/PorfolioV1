@@ -12,4 +12,4 @@ This is my first iteration of my portfolio built in Next.JS with the Contentful 
 
 ## Future Plans
 
-I plan to continually update this project as I grow in software development. When it is relevant I will apply why I have learned to improve and add new features for personal knowledge but also to display the skills I have gained.
+I plan to continually update this project as I grow in the software development field. When it is relevant I will apply what I have learned to improve and add new features for personal knowledge but also to display the skills I have gained.
