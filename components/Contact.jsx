@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './component_styles/Contact.module.css';
 import {Icon} from '@iconify/react';
+import {Context} from '../pages/context/Context';
 
-const Contact = ({contactObj}) => {
+const Contact = () => {
+    const [context] = useContext(Context);
+
+    const contactData = context.contact
+
     return (
         <section className={styles.container}>
             <header>
                 <h1 className={styles.title}>Contact <span className={styles.title_focus}>Me</span></h1>
             </header>
             <section className={styles.icon_container}>
-                {contactObj.map((contact) => {
+                {contactData.map((contact) => {
                         return (
                             <React.Fragment key={contact.id}>
                                 {contact.title === 'email' ? (

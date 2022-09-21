@@ -1,8 +1,10 @@
 import styles from './component_styles/Header.module.css';
 import Image from 'next/image';
-import {useEffect, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import {Icon} from '@iconify/react';
 import Link from 'next/link';
+import {Context} from '../pages/context/Context';
+
 
 const menuClick = () => {
     const menu_links = document.getElementById('menu__links');
@@ -34,11 +36,13 @@ const MenuIcon = ({toggle}) => {
     );
 };
 
-const Header = ({logoUrl, navObj}) => {
+const Header = () => {
+    const [context] = useContext(Context);
     const [active, setActive] = useState(false);
 
-    const logo = `https:${logoUrl}`;
-    const navList = navObj.navList;
+    const logo = `https:${context.logo}`;
+    const navListData = context.navBar.navList;
+    const resumeData = context.navBar.resume;
 
     const changeMenu = () => {
         if (!active) {
@@ -70,7 +74,7 @@ const Header = ({logoUrl, navObj}) => {
                     <Image src={logo} height={60} width={120} layout={'responsive'} alt={'Dave Aigbe Logo'} priority/>
                 </div>
                 <ul className={styles.nav__links}>
-                    {navList.map((item) => {
+                    {navListData.map((item) => {
                             return (
                                 <li key={item.id}>
                                     <a className={styles.link} href={item.link}>{item.title}</a>
@@ -80,8 +84,8 @@ const Header = ({logoUrl, navObj}) => {
                     )}
                 </ul>
                 <div className={styles.nav__resume}>
-                    <Link href={{pathname: navObj.resume.link, query: {logoUrl, navList}}}>
-                        {navObj.resume.title}
+                    <Link href={resumeData.link}>
+                        {resumeData.title}
                     </Link>
                 </div>
                 <button onClick={() => {
@@ -92,7 +96,7 @@ const Header = ({logoUrl, navObj}) => {
                 </button>
             </nav>
             <ul className={styles.menu__links} id={'menu__links'} style={{display: 'none'}}>
-                {navList.map((item) => {
+                {navListData.map((item) => {
                         return (
                             <li key={item.id}>
                                 <a href={item.link}>{item.title}</a>
@@ -102,8 +106,8 @@ const Header = ({logoUrl, navObj}) => {
                     }
                 )}
                 <li>
-                    <Link href={{pathname: navObj.resume.link, query: {logoUrl, navList}}}>
-                        {navObj.resume.title}
+                    <Link href={resumeData.link}>
+                        {resumeData.title}
                     </Link>
                     <hr/>
                 </li>

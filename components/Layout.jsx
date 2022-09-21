@@ -1,13 +1,14 @@
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({logoUrl, navObj ,children, home}) => {
+
+const Layout = ({context, children, home}) => {
     return (
         <section>
             <div id="top"></div>
-            <Header navObj={navObj} logoUrl={logoUrl}/>
+            <Header/>
             <main>{children}</main>
-            <Footer logoUrl={logoUrl} homePage={home}/>
+            <Footer context={context} homePage={home}/>
         </section>
     );
 };

@@ -11,18 +11,18 @@
 /* || Home page button */
 
 .home_container {
-    margin-bottom: 55px;
-    margin-right: 12px;
+    margin-bottom: 40px;
+    margin-right: 16px;
 }
 
 .home_container a {
     transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .home_container a:hover {
-    font-size: 2rem;
     color: #c97b0e;
-    font-weight: bold;
 }
 
 /* || Animation */

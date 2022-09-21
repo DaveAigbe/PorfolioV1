@@ -3,8 +3,9 @@ import styles from './component_styles/Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Footer = ({logoUrl, homePage}) => {
-    const logo = `https:${logoUrl}`
+const Footer = ({context, homePage}) => {
+
+    const logo = `https:${context.logo}`;
 
     return (
         <div>

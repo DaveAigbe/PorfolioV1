@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './component_styles/Skills.module.css';
 import {Icon} from '@iconify/react';
+import {Context} from '../pages/context/Context';
 
-const Skills = ({skillsObj}) => {
+const Skills = () => {
+    const [context] = useContext(Context);
+
+    const skillsData = context.skills
+
     return (
         <section className={styles.container}>
             <header>
@@ -10,7 +15,7 @@ const Skills = ({skillsObj}) => {
             </header>
             <section>
                 <ul className={styles.icon_container}>
-                    {skillsObj.map((skill) => {
+                    {skillsData.map((skill) => {
                             return (
                                 <div key={skill.id}>
                                     <li><Icon  className={styles.icon} icon={skill.icon} width={'90'}/></li>

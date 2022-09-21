@@ -1,31 +1,36 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './component_styles/Hero.module.css';
+import {Context} from '../pages/context/Context';
 
-const Hero = ({heroObj}) => {
+const Hero = () => {
+    const [context] = useContext(Context);
+
+    const heroData = context.hero
+
     return (
         <section>
             <div className={styles.content}>
                 <header>
-                    <h3 className={styles.title_greet}>{heroObj.introduction.greet}</h3>
+                    <h3 className={styles.title_greet}>{heroData.introduction.greet}</h3>
                     <h2 className={styles.title_name}>
-                        <a href={heroObj.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>
-                            {heroObj.introduction.name}
+                        <a href={heroData.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>
+                            {heroData.introduction.name}
                         </a>
                     </h2>
                     <h1 className={styles.title_statement}>
-                        {heroObj.introduction.statement}
+                        {heroData.introduction.statement}
                     </h1>
                 </header>
                 <section>
                     <p className={styles.description}>
-                        {heroObj.description.content[0].content[0].value}
+                        {heroData.description.content[0].content[0].value}
                     </p>
                     <div className={styles.buttons}>
-                        <a href={heroObj.links.projects.link}>
-                            <button className={styles.button}>{heroObj.links.projects.title}</button>
+                        <a href={heroData.links.projects.link}>
+                            <button className={styles.button}>{heroData.links.projects.title}</button>
                         </a>
-                        <a href={heroObj.links.github.link} target={'_blank'} rel={'noreferrer'}>
-                            <button className={styles.button}>{heroObj.links.github.title}</button>
+                        <a href={heroData.links.github.link} target={'_blank'} rel={'noreferrer'}>
+                            <button className={styles.button}>{heroData.links.github.title}</button>
                         </a>
                     </div>
                 </section>
