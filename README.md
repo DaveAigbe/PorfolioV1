@@ -1,6 +1,6 @@
 ## Portfolio V1
 
-This is my first iteration of my portfolio built in Next.JS with the Contentful headless CMS API.
+This is my first iteration of my portfolio built using the React framwork, Next.JS, and the Contentful CMS API.
 
 ## Scrum Board
 
