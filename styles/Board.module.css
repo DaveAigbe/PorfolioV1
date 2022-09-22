@@ -9,13 +9,28 @@
     padding: 20px 20px 0 20px;
 }
 
+/* || Title */
+
+.title {
+    font-size: 3rem;
+}
+
+.title_focus {
+    color: #EC8E0FFF;
+}
+
 /* || Board */
 
 .board {
     border: 0;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 20px 20px 16px rgb(0, 0, 0);
+}
+
+/* || Footer */
+
+.footer__container {
+    margin-top: 20px;
 }
 
 /* || Queries */
