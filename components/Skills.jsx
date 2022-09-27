@@ -17,7 +17,7 @@ const Skills = () => {
                 <ul className={styles.icon_container}>
                     {skillsData.map((skill) => {
                             return (
-                                <div key={skill.id}>
+                                <div tabIndex={0} key={skill.id}>
                                     <li><Icon  className={styles.icon} icon={skill.icon} width={'90'}/></li>
                                 </div>
                             )

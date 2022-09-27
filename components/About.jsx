@@ -10,12 +10,12 @@ const About = () => {
     return (
         <section className={styles.container}>
             <header>
-                <h2 className={styles.title}>About <span className={styles.title_focus}>Me</span></h2>
+                <h2  className={styles.title}>About <span className={styles.title_focus}>Me</span></h2>
             </header>
             <section className={styles.description}>
                 {aboutData.map((paragraph) => {
                         return (
-                            <div key={paragraph.id}>
+                            <div tabIndex={0} key={paragraph.id}>
                                 <p>{paragraph.text}</p>
                             </div>
                         );

@@ -18,11 +18,11 @@ const Contact = () => {
                         return (
                             <React.Fragment key={contact.id}>
                                 {contact.title === 'email' ? (
-                                    <a className={styles.icon_link} href={contact.link} rel={'noreferrer'}>
+                                    <a tabIndex={0} className={styles.icon_link} href={contact.link} rel={'noreferrer'}>
                                         <Icon className={styles.icon} icon={contact.icon} width={'90'} inline={true}/>
                                     </a>
                                 ) : (
-                                    <a  className={styles.icon_link} href={contact.link} target={'_blank'} rel={'noreferrer'}>
+                                    <a tabIndex={0} className={styles.icon_link} href={contact.link} target={'_blank'} rel={'noreferrer'}>
                                         <Icon className={styles.icon} icon={contact.icon} width={'90'} inline={true}/>
                                     </a>
                                 )}

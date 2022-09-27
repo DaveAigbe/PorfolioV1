@@ -17,7 +17,7 @@ const Projects = () => {
                         return (
                             <div key={project.id} className={styles.card}>
                                 <h3>
-                                    <a className={styles.card_title} href={project.link} target={'_blank'} rel={'noreferrer'}>
+                                    <a tabIndex={0} className={styles.card_title} href={project.link} target={'_blank'} rel={'noreferrer'}>
                                         {project.title} <span className={styles.arrow}>&rarr;</span>
                                     </a>
                                 </h3>

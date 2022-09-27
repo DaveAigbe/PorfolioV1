@@ -13,7 +13,7 @@ const AltHeader = ({data}) => {
                 <Image src={logo} height={60} width={120} layout={'responsive'} alt={'Dave Aigbe Logo'} priority/>
             </div>
             <Link href={'/'}>
-                <a className={styles.link}>&larr; Back</a>
+                <a tabIndex={0} className={styles.link}>&larr; Back</a>
             </Link>
         </nav>
     );

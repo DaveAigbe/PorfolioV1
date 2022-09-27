@@ -23,7 +23,7 @@ const Footer = ({context, homePage}) => {
 
                         <Fragment>
                             <p>&uarr;</p>
-                            <a href={'#top'}><Image src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/></a>
+                            <a tabIndex={0} href={'#top'}><Image src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/></a>
                         </Fragment>
                     )
                 }

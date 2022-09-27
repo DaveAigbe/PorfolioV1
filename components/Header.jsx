@@ -75,7 +75,7 @@ const Header = () => {
                     {navListData.map((item) => {
                             return (
                                 <li key={item.id}>
-                                    <a className={styles.link} href={item.link}>{item.title}</a>
+                                    <a tabIndex={0} className={styles.link} href={item.link}>{item.title}</a>
                                 </li>
                             );
                         }
@@ -83,10 +83,10 @@ const Header = () => {
                 </ul>
                 <section className={styles.nav__button__container}>
                     <Link href={resumeData.link}>
-                        <a className={styles.nav__button}>{resumeData.title}</a>
+                        <a tabIndex={0} className={styles.nav__button}>{resumeData.title}</a>
                     </Link>
                     <Link href={boardData.link}>
-                        <a className={styles.nav__button}>{boardData.title}</a>
+                        <a tabIndex={0} className={styles.nav__button}>{boardData.title}</a>
                     </Link>
                 </section>
                 {/*Mobile Menu*/}

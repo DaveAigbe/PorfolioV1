@@ -21,7 +21,7 @@ export default function Resume({data}) {
                 <header>
                     <h1 className={styles.title}>My <span className={styles.title_focus}>Resume</span></h1>
                 </header>
-                <a className={styles.link_container} href={resumeData.link} target={'_blank'} rel={'noreferrer'}>
+                <a tabIndex={0} className={styles.link_container} href={resumeData.link} target={'_blank'} rel={'noreferrer'}>
                     <Image className={styles.image} src={resumeImg} width={897} height={1162} alt={'picture of resume'}/>
                 </a>
             </section>

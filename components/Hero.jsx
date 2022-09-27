@@ -14,7 +14,7 @@ const Hero = () => {
                 <header>
                     <h3 className={styles.title_greet}>{heroData.introduction.greet}</h3>
                     <h1 className={styles.title_name}>
-                        <a href={heroData.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>
+                        <a tabIndex={0} href={heroData.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>
                             {heroData.introduction.name}
                         </a>
                     </h1>
@@ -28,9 +28,9 @@ const Hero = () => {
                     </p>
                     <div className={styles.buttons}>
                         <Link href={heroData.links.projects.link}>
-                            <a className={styles.button}>{heroData.links.projects.title}</a>
+                            <a tabIndex={0} className={styles.button}>{heroData.links.projects.title}</a>
                         </Link>
-                        <a className={styles.button} href={heroData.links.github.link} target={'_blank'} rel={'noreferrer'}>
+                        <a tabIndex={0} className={styles.button} href={heroData.links.github.link} target={'_blank'} rel={'noreferrer'}>
                             {heroData.links.github.title}
                         </a>
                     </div>
