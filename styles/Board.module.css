@@ -24,7 +24,7 @@
 .board {
     border: 0;
     border-radius: 8px;
-    box-shadow: 20px 20px 16px rgb(0, 0, 0);
+    box-shadow: 20px 20px 16px rgba(0, 0, 0, 0.80);
 }
 
 /* || Footer */

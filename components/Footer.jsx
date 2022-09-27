@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import styles from './component_styles/Footer.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Footer = ({context, homePage}) => {
@@ -8,25 +9,25 @@ const Footer = ({context, homePage}) => {
     const logo = `https:${context.logo}`;
 
     return (
-        <div>
             <footer className={styles.footer}>
                 {!homePage ?
                     (
-                        <React.Fragment className={styles.home_container}>
-                            <Image src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/>
-                        </React.Fragment>
+                        <Fragment>
+                            <Link href={'/'} >
+                                <Image className={styles.toHome} src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/>
+                            </Link>
+                        </Fragment>
                     )
                     :
                     (
 
-                        <React.Fragment className={styles.home_container}>
+                        <Fragment>
                             <p>&uarr;</p>
                             <a href={'#top'}><Image src={logo} height={46} width={87} alt={'Dave Aigbe Logo'}/></a>
-                        </React.Fragment>
+                        </Fragment>
                     )
                 }
             </footer>
-        </div>
     );
 };
 

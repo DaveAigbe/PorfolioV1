@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Resume.module.css';
 import * as contentful from 'contentful';
-import Footer from '../components/Footer';
+import AltLayout from '../components/component_styles/AltLayout';
 
 const client = contentful.createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -16,7 +16,7 @@ export default function Resume({data}) {
     const resumeData = data.resume;
 
     return (
-        <div className={styles.container}>
+        <AltLayout data={data} className={styles.container}>
             <section className={styles.main}>
                 <header>
                     <h1 className={styles.title}>My <span className={styles.title_focus}>Resume</span></h1>
@@ -25,8 +25,7 @@ export default function Resume({data}) {
                     <Image className={styles.image} src={resumeImg} width={897} height={1162} alt={'picture of resume'}/>
                 </a>
             </section>
-            <Footer context={data}/>
-        </div>
+        </AltLayout>
     );
 };
 

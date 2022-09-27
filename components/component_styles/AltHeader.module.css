@@ -1,0 +1,85 @@
+/* || Content */
+
+.navbar {
+    /*Styling*/
+    box-sizing: border-box;
+    background-color: #0046ad;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: top 0.3s;
+    opacity: 95%;
+    padding: 20px 20px 15px 20px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+    /*Positioning*/
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* || Logo */
+
+.image_container {
+    display: block;
+    width: 120px;
+}
+
+
+/* || Page Link */
+
+.link {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.link:hover {
+    color: #EC8E0FFF
+}
+
+
+/* || Queries */
+
+@media only screen and (max-width: 640px) {
+    .nav__button, .nav__links {
+        display: none;
+    }
+
+    .navbar {
+        height: 80px;
+        padding: 14px 14px 10px 14px;
+        position: static;
+    }
+
+    .menu__button {
+        display: block;
+        width: 90px;
+        /* To improve */
+        position: relative;
+        height: 80px;
+        top: -8px;
+        right: -24px;
+    }
+
+    .menu__icon {
+        width: 60px;
+    }
+
+    .image_container {
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+    .navbar {
+        font-size: 1.6rem;
+    }
+
+    .image_container {
+        width: 90px;
+    }
+
+    .nav__links {
+        gap: 35px;
+    }
+}

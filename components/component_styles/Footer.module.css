@@ -8,21 +8,8 @@
     padding-bottom: 20px;
 }
 
-/* || Home page button */
-
-.home_container {
-    margin-bottom: 40px;
-    margin-right: 16px;
-}
-
-.home_container a {
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.home_container a:hover {
-    color: #c97b0e;
+.toHome {
+    cursor: pointer;
 }
 
 /* || Animation */
