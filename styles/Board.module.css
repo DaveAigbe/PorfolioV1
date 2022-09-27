@@ -1,11 +1,10 @@
 /* || Content */
 
 .container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    height: 100vh;
     padding: 20px 20px 0 20px;
 }
 
@@ -25,12 +24,7 @@
     border: 0;
     border-radius: 8px;
     box-shadow: 20px 20px 16px rgba(0, 0, 0, 0.80);
-}
-
-/* || Footer */
-
-.footer__container {
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /* || Queries */

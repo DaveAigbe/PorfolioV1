@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import * as contentful from 'contentful';
 import styles from '../styles/Board.module.css';
+import AltLayout from '../components/AltLayout';
 
 
 const client = contentful.createClient({
@@ -13,15 +13,14 @@ export default function MyComponent({data}) {
     const boardData = data.board;
 
     return (
-        <div className={styles.container}>
-            <header>
-                <h1 className={styles.title}>My <span className={styles.title_focus}>Board</span></h1>
-            </header>
-            <iframe className={styles.board} src={boardData.link} width={'90%'} height={'80%'}></iframe>
-            <div className={styles.footer__container}>
-                <Footer context={data}/>
+        <AltLayout data={data}>
+            <div className={styles.container}>
+                <header>
+                    <h1 className={styles.title}>My <span className={styles.title_focus}>Board</span></h1>
+                </header>
+                <iframe className={styles.board} src={boardData.link} width={'90%'} height={'80%'}></iframe>
             </div>
-        </div>
+        </AltLayout>
     );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import AltHeader from '../AltHeader';
-import Footer from '../Footer';
+import AltHeader from './AltHeader';
+import Footer from './Footer';
 
 const AltLayout = ({data, children}) => {
     return (

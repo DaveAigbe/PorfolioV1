@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Resume.module.css';
 import * as contentful from 'contentful';
-import AltLayout from '../components/component_styles/AltLayout';
+import AltLayout from '../components/AltLayout';
 
 const client = contentful.createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
