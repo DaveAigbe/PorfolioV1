@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <section className={styles.container}>
             <header>
-                <h1 className={styles.title}>Contact <span className={styles.title_focus}>Me</span></h1>
+                <h2 className={styles.title}>Contact <span className={styles.title_focus}>Me</span></h2>
             </header>
             <section className={styles.icon_container}>
                 {contactData.map((contact) => {

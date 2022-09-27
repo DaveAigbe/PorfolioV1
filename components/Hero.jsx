@@ -13,14 +13,14 @@ const Hero = () => {
             <div className={styles.content}>
                 <header>
                     <h3 className={styles.title_greet}>{heroData.introduction.greet}</h3>
-                    <h2 className={styles.title_name}>
+                    <h1 className={styles.title_name}>
                         <a href={heroData.links.linkedin.link} target={'_blank'} rel={'noreferrer'}>
                             {heroData.introduction.name}
                         </a>
-                    </h2>
-                    <h1 className={styles.title_statement}>
-                        {heroData.introduction.statement}
                     </h1>
+                    <h3 className={styles.title_statement}>
+                        {heroData.introduction.statement}
+                    </h3>
                 </header>
                 <section>
                     <p className={styles.description}>

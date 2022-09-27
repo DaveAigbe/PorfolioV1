@@ -11,7 +11,7 @@ const Skills = () => {
     return (
         <section className={styles.container}>
             <header>
-                <h1 className={styles.title}>My <span className={styles.title_focus}>Skills</span></h1>
+                <h2 className={styles.title}>My <span className={styles.title_focus}>Skills</span></h2>
             </header>
             <section>
                 <ul className={styles.icon_container}>

@@ -10,17 +10,17 @@ const Projects = () => {
     return (
         <section className={styles.container}>
             <header>
-                <h1 className={styles.title}>My <span className={styles.title_focus}>Projects</span></h1>
+                <h2 className={styles.title}>My <span className={styles.title_focus}>Projects</span></h2>
             </header>
             <section className={styles.cards_grid}>
                 {projectsData.map((project) => {
                         return (
                             <div key={project.id} className={styles.card}>
-                                <a href={project.link} target={'_blank'} rel={'noreferrer'}>
-                                    <h2 className={styles.card_title}>
+                                <h3>
+                                    <a className={styles.card_title} href={project.link} target={'_blank'} rel={'noreferrer'}>
                                         {project.title} <span className={styles.arrow}>&rarr;</span>
-                                    </h2>
-                                </a>
+                                    </a>
+                                </h3>
                                 <p className={styles.card_description}>
                                     {project.description}
                                 </p>
