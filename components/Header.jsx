@@ -8,14 +8,11 @@ import {Context} from './context/Context';
 
 const menuClick = () => {
     const menu_links = document.getElementById('menu__links');
-    const navBar = document.getElementById('navbar');
 
     if (menu_links.style.display === 'none') {
         menu_links.style.display = 'flex';
-        // navBar.style.boxShadow = '2px 4px 16px rgb(0, 0, 0)'
     } else {
         menu_links.style.display = 'none';
-        // navBar.style.boxShadow = '2px 4px 16px rgb(0, 0, 0.2)'
     }
 };
 
@@ -43,6 +40,7 @@ const Header = () => {
     const logo = `https:${context.logo}`;
     const navListData = context.navBar.navList;
     const resumeData = context.navBar.resume;
+    const boardData = context.navBar.board;
 
     const changeMenu = () => {
         if (!active) {
@@ -83,18 +81,15 @@ const Header = () => {
                         }
                     )}
                 </ul>
-                <section className={styles.nav__button__container} >
-                    <div className={styles.nav__button}>
-                        <Link href={resumeData.link}>
-                            {resumeData.title}
-                        </Link>
-                    </div>
-                    <div className={styles.nav__button}>
-                        <Link href={'/board'}>
-                            Scrum Board
-                        </Link>
-                    </div>
+                <section className={styles.nav__button__container}>
+                    <Link href={resumeData.link}>
+                        <a className={styles.nav__button}>{resumeData.title}</a>
+                    </Link>
+                    <Link href={boardData.link}>
+                        <a className={styles.nav__button}>{boardData.title}</a>
+                    </Link>
                 </section>
+                {/*Mobile Menu*/}
                 <button onClick={() => {
                     menuClick();
                     changeMenu();

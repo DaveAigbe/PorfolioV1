@@ -2,8 +2,8 @@
 /* || Container */
 
 .container {
-    /* Change to px */
     margin: 0 auto 100px;
+    position: relative;
 }
 
 /* || Title */
@@ -72,6 +72,17 @@
     cursor: pointer;
 }
 
+/*!* || Animation *!*/
+
+/*.animation_container {*/
+/*    position: absolute;*/
+/*    right: 5%;*/
+/*    bottom: 10px;*/
+/*    height: 30%;*/
+/*    width: 33%;*/
+/*    z-index: 0;*/
+/*}*/
+
 /* || Queries */
 
 @media (max-width: 1000px) {
@@ -90,3 +101,5 @@
     }
 
 }
+
+

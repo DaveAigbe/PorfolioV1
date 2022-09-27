@@ -29,7 +29,6 @@
 
 .icon {
     transition: all 400ms ease-in-out;
-    cursor: pointer;
 }
 
 .icon:hover {

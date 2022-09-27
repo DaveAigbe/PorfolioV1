@@ -4,7 +4,6 @@ import styles from './component_styles/EmailForm.module.css';
 function ContactForm() {
     const [state, handleSubmit] = useForm('xrgdbwly');
 
-    // Swap out for lottie animation
     if (state.succeeded) {
         alert('Message successfully sent!');
         document.getElementById('name').value = ''
@@ -24,6 +23,7 @@ function ContactForm() {
                     name="name"
                     placeholder="Name"
                     className={styles.name}
+                    required
                 />
                 <input
                     id="email"
@@ -31,6 +31,7 @@ function ContactForm() {
                     name="email"
                     placeholder="Email Address"
                     className={styles.email}
+                    required
                 />
                 <ValidationError
                     prefix="Email"
@@ -43,6 +44,7 @@ function ContactForm() {
                     rows={7}
                     placeholder="Message"
                     className={styles.message}
+                    required
                 />
                 <ValidationError
                     prefix="Message"
