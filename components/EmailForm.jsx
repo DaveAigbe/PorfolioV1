@@ -21,7 +21,7 @@ function ContactForm() {
                     id="name"
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Name*"
                     className={styles.name}
                     required
                 />
@@ -29,7 +29,7 @@ function ContactForm() {
                     id="email"
                     type="email"
                     name="email"
-                    placeholder="Email Address"
+                    placeholder="Email Address*"
                     className={styles.email}
                     required
                 />
@@ -42,7 +42,7 @@ function ContactForm() {
                     id="message"
                     name="message"
                     rows={7}
-                    placeholder="Message"
+                    placeholder="Message*"
                     className={styles.message}
                     required
                 />
