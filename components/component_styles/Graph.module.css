@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.graph_card {
+    background: linear-gradient(90deg, rgb(20, 92, 210) 25%, rgba(0,70,173,1) 75%);
+    border: 3px solid #0044a9;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.graph_sub {
+    margin: 5px 0;
+}
+
+.graph {
+    height: 100px;
+}
+
+.date {
+    margin: 0;
+}
