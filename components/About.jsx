@@ -23,9 +23,9 @@ const About = () => {
                     }
                 )}
             </section>
-            <section>
-                <Widget/>
-            </section>
+            {/*<section>*/}
+            {/*    <Widget/>*/}
+            {/*</section>*/}
         </section>
     );
 };
