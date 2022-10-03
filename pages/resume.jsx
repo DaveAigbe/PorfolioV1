@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Resume.module.css';
 import * as contentful from 'contentful';
 import AltLayout from '../components/AltLayout';
+import {motion} from 'framer-motion';
 
 const client = contentful.createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -17,14 +18,23 @@ export default function Resume({data}) {
 
     return (
         <AltLayout data={data} className={styles.container}>
-            <section className={styles.main}>
-                <header>
-                    <h1 className={styles.title}>My <span className={styles.title_focus}>Resume</span></h1>
-                </header>
-                <a tabIndex={0} className={styles.link_container} href={resumeData.link} target={'_blank'} rel={'noreferrer'}>
-                    <Image className={styles.image} src={resumeImg} width={897} height={1162} alt={'picture of resume'}/>
-                </a>
-            </section>
+            <motion.div
+                initial={{y: 25, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                    duration: 0.75,
+                    delay: 0.2,
+                }}
+            >
+                <section className={styles.main}>
+                    <header>
+                        <h1 className={styles.title}>My <span className={styles.title_focus}>Resume</span></h1>
+                    </header>
+                    <a tabIndex={0} className={styles.link_container} href={resumeData.link} target={'_blank'} rel={'noreferrer'}>
+                        <Image className={styles.image} src={resumeImg} width={897} height={1162} alt={'picture of resume'}/>
+                    </a>
+                </section>
+            </motion.div>
         </AltLayout>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import * as contentful from 'contentful';
 import styles from '../styles/Board.module.css';
 import AltLayout from '../components/AltLayout';
+import {motion} from 'framer-motion';
 
 
 const client = contentful.createClient({
@@ -14,12 +15,21 @@ export default function MyComponent({data}) {
 
     return (
         <AltLayout data={data}>
-            <div className={styles.container}>
-                <header>
-                    <h1 className={styles.title}>My <span className={styles.title_focus}>Board</span></h1>
-                </header>
-                <iframe className={styles.board} src={boardData.link} width={'90%'} height={'80%'}></iframe>
-            </div>
+            <motion.div
+                initial={{y: 25, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                    duration: 0.75,
+                    delay: 0.4,
+                }}
+            >
+                <div className={styles.container}>
+                    <header>
+                        <h1 className={styles.title}>My <span className={styles.title_focus}>Board</span></h1>
+                    </header>
+                    <iframe className={styles.board} src={boardData.link} width={'90%'} height={'80%'}></iframe>
+                </div>
+            </motion.div>
         </AltLayout>
     );
 };

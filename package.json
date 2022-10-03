@@ -12,6 +12,7 @@
     "@formspree/react": "^2.3.3",
     "@iconify/react": "^3.2.2",
     "contentful": "^9.1.34",
+    "framer-motion": "^7.5.1",
     "lottie-web": "^5.9.6",
     "next": "12.2.5",
     "npx": "^10.2.2",

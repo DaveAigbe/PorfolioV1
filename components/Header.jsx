@@ -4,6 +4,7 @@ import {useContext, useEffect, useState} from 'react';
 import {Icon} from '@iconify/react';
 import Link from 'next/link';
 import {Context} from './context/Context';
+import {motion} from 'framer-motion';
 
 
 const menuClick = () => {
@@ -67,59 +68,67 @@ const Header = () => {
 
     return (
         <header>
-            <nav className={styles.navbar} id={'navbar'}>
-                <div className={styles.image_container}>
-                    <Image src={logo} height={60} width={120} layout={'responsive'} alt={'Dave Aigbe Logo'} priority/>
-                </div>
-                <ul className={styles.nav__links}>
+            <motion.div
+                initial={{y: 25, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                    duration: 0.75,
+                }}
+            >
+                <nav className={styles.navbar} id={'navbar'}>
+                    <div className={styles.image_container}>
+                        <Image src={logo} height={60} width={120} layout={'responsive'} alt={'Dave Aigbe Logo'} priority/>
+                    </div>
+                    <ul className={styles.nav__links}>
+                        {navListData.map((item) => {
+                                return (
+                                    <li key={item.id}>
+                                        <a tabIndex={0} className={styles.link} href={item.link}>{item.title}</a>
+                                    </li>
+                                );
+                            }
+                        )}
+                    </ul>
+                    <section className={styles.nav__button__container}>
+                        <Link href={resumeData.link}>
+                            <a tabIndex={0} className={styles.nav__button}>{resumeData.title}</a>
+                        </Link>
+                        <Link href={boardData.link}>
+                            <a tabIndex={0} className={styles.nav__button}>{boardData.title}</a>
+                        </Link>
+                    </section>
+                    {/*Mobile Menu*/}
+                    <button onClick={() => {
+                        menuClick();
+                        changeMenu();
+                    }} className={styles.menu__button}>
+                        <MenuIcon toggle={active}/>
+                    </button>
+                </nav>
+                <ul className={styles.menu__links} id={'menu__links'} style={{display: 'none'}}>
                     {navListData.map((item) => {
                             return (
                                 <li key={item.id}>
-                                    <a tabIndex={0} className={styles.link} href={item.link}>{item.title}</a>
+                                    <a href={item.link}>{item.title}</a>
+                                    <hr/>
                                 </li>
                             );
                         }
                     )}
+                    <li>
+                        <Link href={resumeData.link}>
+                            {resumeData.title}
+                        </Link>
+                        <hr/>
+                    </li>
+                    <li>
+                        <Link href={'/board'}>
+                            Scrum Board
+                        </Link>
+                        <hr/>
+                    </li>
                 </ul>
-                <section className={styles.nav__button__container}>
-                    <Link href={resumeData.link}>
-                        <a tabIndex={0} className={styles.nav__button}>{resumeData.title}</a>
-                    </Link>
-                    <Link href={boardData.link}>
-                        <a tabIndex={0} className={styles.nav__button}>{boardData.title}</a>
-                    </Link>
-                </section>
-                {/*Mobile Menu*/}
-                <button onClick={() => {
-                    menuClick();
-                    changeMenu();
-                }} className={styles.menu__button}>
-                    <MenuIcon toggle={active}/>
-                </button>
-            </nav>
-            <ul className={styles.menu__links} id={'menu__links'} style={{display: 'none'}}>
-                {navListData.map((item) => {
-                        return (
-                            <li key={item.id}>
-                                <a href={item.link}>{item.title}</a>
-                                <hr/>
-                            </li>
-                        );
-                    }
-                )}
-                <li>
-                    <Link href={resumeData.link}>
-                        {resumeData.title}
-                    </Link>
-                    <hr/>
-                </li>
-                <li>
-                    <Link href={'/board'}>
-                        Scrum Board
-                    </Link>
-                    <hr/>
-                </li>
-            </ul>
+            </motion.div>
         </header>
     );
 };
