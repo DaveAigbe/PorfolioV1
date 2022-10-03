@@ -7,7 +7,7 @@ import CircleLoader from './CircleLoader';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const apiData = async () => {
-    const res = await axios.get('http://portfoliowidgetapi-env.eba-yb2ar4we.us-east-1.elasticbeanstalk.com/workouts/?json=true');
+    const res = await axios.get('https://fitness-tracking-api.herokuapp.com/workouts/?json=true');
     return await res.data;
 };
 
