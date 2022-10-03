@@ -30,10 +30,6 @@ const Graph = ({graphData}) => {
         ]
     };
 
-    // TODO: Figure out how to change label colors on widget
-    // TODO: Fix logo showing up on page transition
-    // TODO: Add form send animation
-
     const options = {
         responsive: true,
         legend: {}
