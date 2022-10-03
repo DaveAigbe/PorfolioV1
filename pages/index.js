@@ -22,7 +22,7 @@ export default function Home({data}) {
 
     return (
         <Context.Provider value={[context, setContext]}>
-            <Layout context={data} home>
+            <Layout context={context} home>
                 <Head>
                     <title>Dave Aigbe | CS Student</title>
                     <meta name="description" content="Personal Portfolio"/>

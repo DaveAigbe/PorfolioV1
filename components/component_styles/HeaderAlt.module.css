@@ -3,7 +3,7 @@
 .navbar {
     /*Styling*/
     box-sizing: border-box;
-    background-color: #0046ad;
+    background: linear-gradient(90deg, rgb(20, 92, 210) 25%, rgba(0,70,173,1) 75%);
     font-size: 2rem;
     font-weight: bold;
     transition: top 0.3s;

@@ -20,7 +20,7 @@
 /* || Form Container */
 
 .form_container {
-    background-color: #014fbe;
+    background: linear-gradient(90deg, rgb(20, 92, 210) 25%, rgba(0,70,173,1) 75%);
     border: 3px solid #0044a9;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     border-radius: 10px;
