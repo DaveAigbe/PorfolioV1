@@ -5,8 +5,7 @@ import {Context} from './context/Context';
 
 const Skills = () => {
     const [context] = useContext(Context);
-
-    const skillsData = context.skills
+    const skillsData = context.skills;
 
     return (
         <section className={styles.container}>
@@ -18,9 +17,9 @@ const Skills = () => {
                     {skillsData.map((skill) => {
                             return (
                                 <div tabIndex={0} key={skill.id}>
-                                    <li><Icon  className={styles.icon} icon={skill.icon} width={'90'}/></li>
+                                    <li><Icon className={styles.icon} icon={skill.icon} width={'90'}/></li>
                                 </div>
-                            )
+                            );
                         }
                     )}
                 </ul>

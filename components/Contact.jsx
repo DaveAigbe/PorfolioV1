@@ -5,8 +5,7 @@ import {Context} from './context/Context';
 
 const Contact = () => {
     const [context] = useContext(Context);
-
-    const contactData = context.contact
+    const contactData = context.contact;
 
     return (
         <section className={styles.container}>

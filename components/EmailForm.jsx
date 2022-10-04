@@ -6,9 +6,9 @@ function ContactForm() {
 
     if (state.succeeded) {
         alert('Message successfully sent!');
-        document.getElementById('name').value = ''
-        document.getElementById('email').value = ''
-        document.getElementById('message').value = ''
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
     }
 
     return (

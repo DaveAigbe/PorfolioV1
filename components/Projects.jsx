@@ -4,8 +4,7 @@ import {Context} from './context/Context';
 
 const Projects = () => {
     const [context] = useContext(Context);
-
-    const projectsData = context.projects
+    const projectsData = context.projects;
 
     return (
         <section className={styles.container}>
