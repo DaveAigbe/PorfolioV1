@@ -17,8 +17,7 @@ const Hero = () => {
                 transition={{
                     duration: 0.75,
                     delay: 0.6,
-                }}
-            >
+                }}>
                 <div className={styles.content}>
                     <header>
                         <h3 className={styles.title_greet}>{heroData.introduction.greet}</h3>

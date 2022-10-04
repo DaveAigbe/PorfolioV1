@@ -19,12 +19,7 @@ const TransitionLayout = ({children}) => {
 
 
     return (
-        <motion.div
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={squareVariants}
-        >
+        <motion.div ref={ref} animate={controls} initial="hidden" variants={squareVariants}>
             {children}
         </motion.div>
     );
