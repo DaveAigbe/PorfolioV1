@@ -1,7 +1,7 @@
 import React from 'react';
 import * as contentful from 'contentful';
 import styles from '../styles/Board.module.css';
-import AltLayout from '../components/AltLayout';
+import AltLayout from '../components/layout/AltLayout';
 import {motion} from 'framer-motion';
 
 

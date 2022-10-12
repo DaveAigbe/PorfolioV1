@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {ArcElement, Chart as ChartJS, Legend, Tooltip} from 'chart.js';
 import axios from 'axios';
 import Graph from './Graph';
-import CircleLoader from './CircleLoader';
+import CircleLoader from '../../CircleLoader';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

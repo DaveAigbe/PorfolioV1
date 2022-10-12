@@ -1,9 +1,9 @@
-import styles from './component_styles/Header.module.css';
+import styles from '../component_styles/Header.module.css';
 import Image from 'next/image';
 import {useContext, useEffect, useState} from 'react';
 import {Icon} from '@iconify/react';
 import Link from 'next/link';
-import {Context} from './context/Context';
+import {Context} from '../context/Context';
 import {motion} from 'framer-motion';
 
 

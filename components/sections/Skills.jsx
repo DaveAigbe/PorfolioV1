@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import styles from './component_styles/Skills.module.css';
+import styles from '../component_styles/Skills.module.css';
 import {Icon} from '@iconify/react';
-import {Context} from './context/Context';
+import {Context} from '../context/Context';
 
 const Skills = () => {
     const [context] = useContext(Context);

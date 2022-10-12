@@ -1,5 +1,5 @@
 import {useForm, ValidationError} from '@formspree/react';
-import styles from './component_styles/EmailForm.module.css';
+import styles from '../component_styles/EmailForm.module.css';
 
 function ContactForm() {
     const [state, handleSubmit] = useForm('xrgdbwly');

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Resume.module.css';
 import * as contentful from 'contentful';
-import AltLayout from '../components/AltLayout';
+import AltLayout from '../components/layout/AltLayout';
 import {motion} from 'framer-motion';
 
 const client = contentful.createClient({

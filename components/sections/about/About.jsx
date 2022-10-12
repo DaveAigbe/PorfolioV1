@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import styles from './component_styles/About.module.css';
-import {Context} from './context/Context';
+import styles from '../../component_styles/About.module.css';
+import {Context} from '../../context/Context';
 import Widget from './Widget';
 
 const About = () => {

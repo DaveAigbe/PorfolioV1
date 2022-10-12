@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import styles from './component_styles/Projects.module.css';
-import {Context} from './context/Context';
+import styles from '../component_styles/Projects.module.css';
+import {Context} from '../context/Context';
 
 const Projects = () => {
     const [context] = useContext(Context);
