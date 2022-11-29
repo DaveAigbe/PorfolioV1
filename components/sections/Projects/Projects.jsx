@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
-import styles from '../component_styles/Projects.module.css';
-import {Context} from '../context/Context';
+import styles from '../../component_styles/sections/Projects/Projects.module.css';
+import {Context} from '../../context/Context';
+import {Project} from './Project';
 
 const Projects = () => {
     const [context] = useContext(Context);
@@ -15,14 +16,7 @@ const Projects = () => {
                 {projectsData.map((project) => {
                         return (
                             <div key={project.id} className={styles.card}>
-                                <h3>
-                                    <a tabIndex={0} className={styles.card_title} href={project.link} target={'_blank'} rel={'noreferrer'}>
-                                        {project.title} <span className={styles.arrow}>&rarr;</span>
-                                    </a>
-                                </h3>
-                                <p className={styles.card_description}>
-                                    {project.description}
-                                </p>
+                                <Project project={project}/>
                             </div>
                         );
                     }

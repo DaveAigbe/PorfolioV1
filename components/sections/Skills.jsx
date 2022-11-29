@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import styles from '../component_styles/Skills.module.css';
+import styles from '../component_styles/sections/Skills.module.css';
 import {Icon} from '@iconify/react';
 import {Context} from '../context/Context';
 

@@ -3,8 +3,8 @@ import Head from 'next/head';
 import Layout from '../components/layout/Layout';
 import EmailForm from '../components/sections/EmailForm';
 import Hero from '../components/sections/Hero';
-import Projects from '../components/sections/Projects';
-import About from '../components/sections/about/About';
+import Projects from '../components/sections/Projects/Projects';
+import About from '../components/sections/About/About';
 import Contact from '../components/sections/Contact';
 import Skills from '../components/sections/Skills';
 import * as contentful from 'contentful';
@@ -17,7 +17,7 @@ const client = contentful.createClient({
 });
 
 
-export default function Home({data}) {
+export default function Index({data}) {
     const [context, setContext] = useState(data);
 
     return (

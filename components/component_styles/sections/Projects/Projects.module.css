@@ -24,6 +24,7 @@
 
 /* || Card */
 
+
 .card {
 
 }
@@ -47,6 +48,10 @@
 
 /* || Queries */
 
+@media (min-width: 640px) {
+
+}
+
 @media (max-width: 1000px) {
     .container {
         margin: 0 clamp(15px, 10vw, 70px) 20rem;
@@ -55,12 +60,6 @@
     .title {
         font-size: clamp(2rem, 8vw, 3rem);
     }
-
-    .card_title {
-        font-size: clamp(1.8rem, 8vw, 2.4rem);
-    }
-
-    .card_description {
-        font-size: clamp(1.5rem, 5vw, 1.7rem);
-    }
 }
+
+

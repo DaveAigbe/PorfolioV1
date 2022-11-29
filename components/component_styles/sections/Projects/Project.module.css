@@ -1,0 +1,46 @@
+
+.card_title {
+    transition: all 0.2s ease 0s;
+    font-size: 2.4rem;
+}
+
+.card_title:hover {
+    color: #bda59d;
+}
+
+.arrow {
+    color: #EC8E0FFF;
+}
+
+.card_description {
+    font-size: 1.7rem;
+}
+
+.card_links {
+    font-weight: bold;
+    display: flex;
+    gap: 8px;
+}
+
+.card_link {
+    padding: 4px;
+    transition: all 200ms ease-in-out;
+    border-radius: 4px;
+    background-color: #EC8E0FFF;
+}
+
+.card_link:hover {
+    background-color: #bda59d;
+}
+
+/* || Queries */
+
+@media (max-width: 1000px) {
+    .card_title {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
+    .card_description {
+        font-size: clamp(1.5rem, 5vw, 1.7rem);
+    }
+}

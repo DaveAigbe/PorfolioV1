@@ -1,6 +1,6 @@
 import React from 'react';
 import {Doughnut} from 'react-chartjs-2';
-import styles from '../../component_styles/Graph.module.css';
+import styles from '../../component_styles/sections/About/Graph.module.css';
 
 const Graph = ({graphData}) => {
     const weight = graphData[0].weight;
@@ -30,10 +30,7 @@ const Graph = ({graphData}) => {
         ]
     };
 
-    const options = {
-        responsive: true,
-        legend: {}
-    };
+
 
 
     return (

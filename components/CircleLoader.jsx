@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import styles from './component_styles/Graph.module.css'
+import styles from './component_styles/sections/About/Graph.module.css'
 
 
 const spinTransition = {

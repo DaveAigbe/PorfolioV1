@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import styles from '../component_styles/Footer.module.css';
+import styles from '../component_styles/layout/Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 

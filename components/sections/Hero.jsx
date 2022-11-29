@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import styles from '../component_styles/Hero.module.css';
+import styles from '../component_styles/sections/Hero.module.css';
 import {Context} from '../context/Context';
 import Link from 'next/link';
 import {motion} from 'framer-motion';
