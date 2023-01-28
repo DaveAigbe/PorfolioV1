@@ -20,6 +20,7 @@ const client = contentful.createClient({
 export default function Index({data}) {
     const [context, setContext] = useState(data);
 
+    // Change this line to update build
     return (
         <Context.Provider value={[context, setContext]}>
             <Layout context={context} home>
