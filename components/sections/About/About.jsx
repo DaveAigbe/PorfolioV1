@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import styles from '../../component_styles/sections/About/About.module.css';
 import {Context} from '../../context/Context';
-import Widget from './Widget';
 
 const About = () => {
     const [context] = useContext(Context);
@@ -22,9 +21,9 @@ const About = () => {
                     }
                 )}
             </section>
-            <section>
-                <Widget/>
-            </section>
+            {/*<section>*/}
+            {/*    <Widget/>*/}
+            {/*</section>*/}
         </section>
     );
 };

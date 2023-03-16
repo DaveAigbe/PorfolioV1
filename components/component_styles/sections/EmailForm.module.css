@@ -20,8 +20,8 @@
 /* || Form Container */
 
 .form_container {
-    background: linear-gradient(90deg, rgb(20, 92, 210) 25%, rgba(0,70,173,1) 75%);
-    border: 3px solid #0044a9;
+    background: #151938;
+    border: 3px solid #22295d;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     border-radius: 10px;
     margin: 100px;
@@ -37,7 +37,7 @@
     padding: 8px;
     margin: 10px;
     width: 50%;
-    background-color: #296377;
+    background-color: #2c3675;
     font-size: 1.6rem;
 }
 
@@ -59,7 +59,7 @@
 
 .button {
     width: 25%;
-    background-color: #296377;
+    background-color: #2c3675;
     font-size: 1.6rem;
     transition: all 200ms ease-in-out;
     border-radius: 5px;

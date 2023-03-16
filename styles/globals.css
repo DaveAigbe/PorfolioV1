@@ -37,8 +37,7 @@ a {
 
     body {
         color: #ffffff;
-        background: rgb(0,70,173);
-        background: linear-gradient(90deg, rgb(20, 92, 210) 25%, rgba(0,70,173,1) 75%);
+        background: #0B0D1C;
     }
 }
 
@@ -50,7 +49,6 @@ a {
 
     body {
         color: #ffffff;
-        background: rgb(0,70,173);
-        background: linear-gradient(90deg, rgb(20, 92, 210) 25%, rgba(0,70,173,1) 75%);
+        background: #0B0D1C;
     }
 }
