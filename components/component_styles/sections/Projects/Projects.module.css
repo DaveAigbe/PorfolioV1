@@ -13,7 +13,7 @@
 }
 
 .title_focus {
-    color: #EC8E0FFF;
+    color: #2E9CCA;
 }
 
 /* || Cards Grid */
@@ -35,11 +35,11 @@
 }
 
 .card_title:hover {
-    color: #bda59d;
+    color: #2E9CCA;
 }
 
 .arrow {
-    color: #EC8E0FFF;
+    color: #29648A;
 }
 
 .card_description {

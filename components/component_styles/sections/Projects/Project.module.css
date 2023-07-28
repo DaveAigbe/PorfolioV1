@@ -5,11 +5,11 @@
 }
 
 .card_title:hover {
-    color: #bda59d;
+    color: #AAABB8;
 }
 
 .arrow {
-    color: #EC8E0FFF;
+    color: #29648A;
 }
 
 .card_description {
@@ -26,11 +26,11 @@
     padding: 4px;
     transition: all 200ms ease-in-out;
     border-radius: 4px;
-    background-color: #EC8E0FFF;
+    background-color: #29648A;
 }
 
 .card_link:hover {
-    background-color: #bda59d;
+    background-color: #2E9CCA;
 }
 
 /* || Queries */

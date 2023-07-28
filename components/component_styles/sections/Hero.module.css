@@ -22,7 +22,7 @@
 }
 
 .title_name a {
-    color: #EC8E0FFF;
+    color: #2E9CCA;
     font-size: 8.5rem;
     margin: 20px 0;
 }
@@ -30,11 +30,11 @@
 .title_name a:hover,
 .title_name a:focus,
 .title_name a:active {
-    color: rgba(255, 185, 59, 0.28);
+    color: rgba(255, 185, 59, 0);
     transition: all 0.3s ease-in-out;
-    text-decoration: underline 1px solid #c97b0e;
+    text-decoration: underline 1px solid #8daad9;
     background-size: cover;
-    background: url("https://media.giphy.com/media/t2aAdTgnU9Ie6jvG0W/giphy-downsized-large.gif") center;
+    background: url("https://media.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif") center;
     -webkit-background-clip: text;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -69,7 +69,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: white;
-    background-color: #EC8E0FFF;
+    background-color: #29648A;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     transition: all 200ms ease-in-out;
     border: none;
@@ -82,7 +82,7 @@
 
 .button:hover, .button:active {
     /*background-color: #b69787;*/
-    background-color: #ab8f87;
+    background-color: #2E9CCA;
 }
 
 /* || Queries */

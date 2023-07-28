@@ -14,13 +14,13 @@
 }
 
 .title_focus {
-    color: #EC8E0FFF;
+    color: #2E9CCA;
 }
 
 /* || Form Container */
 
 .form_container {
-    background: #151938;
+    background: #141534;
     border: 3px solid #22295d;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     border-radius: 10px;
@@ -37,8 +37,9 @@
     padding: 8px;
     margin: 10px;
     width: 50%;
-    background-color: #2c3675;
+    background-color: #464866;
     font-size: 1.6rem;
+    border: 3px solid #22295d;
 }
 
 .name:focus, .email:focus, .message:focus {
@@ -60,6 +61,7 @@
 .button {
     width: 25%;
     background-color: #2c3675;
+    border: 3px solid #22295d;
     font-size: 1.6rem;
     transition: all 200ms ease-in-out;
     border-radius: 5px;
@@ -69,7 +71,7 @@
 
 
 .button:hover {
-    background-color: #ab8f87;
+    background-color: #3a489a;
     cursor: pointer;
 }
 

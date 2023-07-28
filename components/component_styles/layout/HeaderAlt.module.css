@@ -3,7 +3,7 @@
 .navbar {
     /*Styling*/
     box-sizing: border-box;
-    background: #151938;
+    background: #464866;
     font-size: 2rem;
     font-weight: bold;
     transition: top 0.3s;
@@ -34,7 +34,7 @@
 }
 
 .link:hover {
-    color: #EC8E0FFF
+    color: #2E9CCA;
 }
 
 

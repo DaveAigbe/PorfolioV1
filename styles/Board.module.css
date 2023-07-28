@@ -15,7 +15,7 @@
 }
 
 .title_focus {
-    color: #EC8E0FFF;
+    color: #2E9CCA;
 }
 
 /* || Board */
@@ -23,7 +23,7 @@
 .board {
     border: 0;
     border-radius: 8px;
-    box-shadow: 15px 15px 10px rgba(199, 199, 199, 0.65);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.65);
     margin-bottom: 50px;
 }
 
