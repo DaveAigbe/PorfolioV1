@@ -8,7 +8,7 @@ This is my first iteration of my portfolio built using the React library, Next.J
 
 ## Live Website
 
-- [https://www.daveaigbe.live/](https://www.daveaigbe.live/)
+- [https://www.daveaigbe.com/](https://www.daveaigbe.com/)
 
 ## Future Plans
 
